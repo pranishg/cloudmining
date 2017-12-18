@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+
+	<?php
+			$f="https://api.coindesk.com/v1/bpi/currentprice/USD.json";
+
+			$file=file_get_contents($f);
+			
+			if($file==""){
+	print("error:cant get file");
+	return;
+}
+$myjson = json_decode($file);
+
+echo $myjson->bpi->USD->rate; ?>
 <html lang="en">
     
 
@@ -213,28 +227,34 @@ $('.j-change-lang').click(changeLang);
                 <ul class="list-inline pull-left">
 
                 <li class="margin-right-10">Price: </li>
-				<?php
+				<li class="margin-right-10">
+                    BTC/USD<span>
+			<?php
+			$f="https://api.coindesk.com/v1/bpi/currentprice.json";
 
-$f="https://api.coindesk.com/v1/bpi/currentprice.json";
-
-$file=file_get_contents($f);
-if($file==""){
+			$file=file_get_contents($f);
+			
+			if($file==""){
 	print("error:cant get file");
 	return;
 }
 $myjson = json_decode($file);
-echo "<li class='margin-right-10'>BTC/USD :<span>".$myjson->bpi->USD->rate."</span>";
-
-
-
-?>
+var_dump($myjson);
+print $myjson->bpi->USD->rate; ?>
+								
+</span>
+</li>
                <!-- <li class="margin-right-10">
                     BTC/USD <span>15453.7263</span>
                 </li>-->
                 <li class="margin-right-10">
                     BTC/EUR <span>13134.7401</span>
                 </li>
-                <li class="margin-left-15 margin-right-15 hidden-xs">Difficulty: <span>1 590 896 927 258</span></li>
+                <li class="margin-left-15 margin-right-15 hidden-xs">Difficulty: <span>
+ <?php
+  $text = file_get_contents("https://blockchain.info/q/getdifficulty");
+  echo $text;
+  ?>  </span></li>
                <!-- <li class="margin-right-15 hidden-xs">Hashrate: <span>13760 PH/s</span></li>-->
 
 				</ul>
