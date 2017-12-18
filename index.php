@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 
-
-	<?php
-			$f="https://api.coindesk.com/v1/bpi/currentprice/USD.json";
-
-			$file=file_get_contents($f);
-			
-			if($file==""){
-	print("error:cant get file");
-	return;
-}
-$myjson = json_decode($file);
-
-echo $myjson->bpi->USD->rate; ?>
 <html lang="en">
-    
-
-
-
-
-    
 <!-- Mirrored from hashing24.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:47:20 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -230,6 +211,7 @@ $('.j-change-lang').click(changeLang);
 				<li class="margin-right-10">
                     BTC/USD<span>
 			<?php
+                       
 			$f="https://api.coindesk.com/v1/bpi/currentprice.json";
 
 			$file=file_get_contents($f);
@@ -239,7 +221,7 @@ $('.j-change-lang').click(changeLang);
 	return;
 }
 $myjson = json_decode($file);
-var_dump($myjson);
+
 print $myjson->bpi->USD->rate; ?>
 								
 </span>
@@ -248,7 +230,19 @@ print $myjson->bpi->USD->rate; ?>
                     BTC/USD <span>15453.7263</span>
                 </li>-->
                 <li class="margin-right-10">
-                    BTC/EUR <span>13134.7401</span>
+                    BTC/EUR <span>	<?php
+                       
+			$f="https://api.coindesk.com/v1/bpi/currentprice.json";
+
+			$file=file_get_contents($f);
+			
+			if($file==""){
+	print("error:cant get file");
+	return;
+}
+$myjson = json_decode($file);
+
+print $myjson->bpi->EUR->rate; ?></span>
                 </li>
                 <li class="margin-left-15 margin-right-15 hidden-xs">Difficulty: <span>
  <?php
