@@ -6,7 +6,7 @@
 		<div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	        <h4 class="modal-title">Sign In</h4>
-	        <small class="js_or-register-new">OR <a href="register.php">REGISTER NEW ACCOUNT</a></small>
+	        <small class="js_or-register-new">OR <a href="/register">REGISTER NEW ACCOUNT</a></small>
 	    </div>
         <div class="modal-body">
             
@@ -15,7 +15,7 @@
         <div class="alert hidden js-login_alert"></div>
     </div>
 </div>
-<form class="form-horizontal" method="POST" action="https://hashing24.com/authenticate" id="js-authenticate">
+<form class="form-horizontal" method="POST" action="/authenticate" id="js-authenticate">
     <input type="hidden" name="api_key" value="">
     <input type="hidden" name="ask_pin" value="0">
     <input type="hidden" name="ask_2step" value="0">
@@ -77,11 +77,11 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <a href="index.php" class="btn btn-link js-reset_password" data-loading-text="Loading..."><small>I can&#39;t access my account</small></a>
+            <a href="/" class="btn btn-link js-reset_password" data-loading-text="Loading..."><small>I can&#39;t access my account</small></a>
         </div>
     </div>
     <div class="js-auth_inputs js-auth_verification display_none">
-        <p class="small text-center margin-top-5">Wrong code generated?<br>Solution is <a href="faq.php#q19">here</a>.</p>
+        <p class="small text-center margin-top-5">Wrong code generated?<br>Solution is <a href="/faq#q19">here</a>.</p>
     </div>
     <div class="js-auth_inputs js-auth_login">
         <div class="sign-in-divider">
@@ -89,13 +89,13 @@
         </div>
         <div class="sign-in-social">sign in with social account</div>
         <div class="sign-in-social-icons">
-            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback&amp;response_type=code&amp;client_id=1947287212159869&amp;state=&amp;scope=email">
+            <a class="sign-in-social-icon" href="/oauth2/facebook">
                 <span class="fa-stack icon-social icon-fb">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;scope=email&amp;state=">
+            <a class="sign-in-social-icon" href="/oauth2/google">
                 <span class="fa-stack icon-social icon-gp">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -332,254 +332,20 @@ var fullDateString = new Date();
 
 
                 
-<div class="top-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="top-banner-title">Start Bitcoin Mining with Industry Leaders</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7">
-                <div class="top-banner-subtitle">We make industrial mining accessible for everyone. You get access to the newest and most advanced technologies in the industry, provided by the leading companies.</div>
-            </div>
-        </div>
-        <a href="tariffs.php" class="btn btn-warning top-banner-button margin-right-25">Start mining now</a>
-        <a href="#" class="btn btn-transparent top-banner-button" data-toggle="modal" data-target="#watchVideoModal">
-            <span class="glyphicon glyphicon-play-circle"></span>
-        Watch video
-        </a>
-    </div>
-</div>
-
-<div class="modal fade" id="watchVideoModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg?enablejsapi=1" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>Three Easy Steps to Start Bitcoin Mining</h2>
-            </div>
-        </div>
-        <div class="row margin-bottom-30 margin-top-25">
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_2.png" alt="Hashing24 - REGISTER"></div>
-                <h4 class="text-center step-title">
-                    <span class="step_badge">1</span>
-                    <a href="register.php">REGISTER</a>
-                </h4>
-                <div class="step-info">Don’t worry, it will take only a few<br> minutes to complete registration.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_1.png" alt="Choose"></div>
-                <h4 class="text-center step-title"><span class="step_badge">2</span> <a href="tariffs.php">Choose</a> your plan</h4>
-                <div class="step-info">Simply select your power<br> plan and pay for it.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_3.png" alt="Hashing24 - Receive bitcoin"></div>
-                <h4 class="text-center step-title"><span class="step_badge">3</span> Receive bitcoin</h4>
-                <div class="step-info">Now you all set up and ready to<br> collect freshly baked bitcoins.</div>
-            </div>
-        </div>
-            <div class="margin-top-40 text-center">
-                <a href="tariffs.php" class="btn btn-transparent-orange top-banner-button">Start now</a>
-            </div>
-    </div>
-</div>
-
-<div class="why-profitable">
-    <div class="container">
-        <div class="why-profitable-inner clearfix">
-        WHY BITCOIN MINING IS profitable ?
-            <a href="howitworks.php" class="btn btn-transparent w150 pull-right margin-top-8">Find out</a>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="video-container margin-top-40">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h1>Who we are and what we offer?</h1>
-                <p class="default-p f18">
-                    We the video provides turnkey renting solutions from the largest bitcoin mining data centers.
-                </p>
-                <ul class="top-info-wrapper-list">
-                    <li>Official reseller of industry leading companies</li>
-                    <li>Data centers in Iceland and Georgia</li>
-                    <li>The newest ASIC chips</li>
-                    <li>Air and immersion cooling technology</li>
-                    <li>Ultimate performance at low cost</li>
-                    <li>100% uptime guarantee</li>
-                    <li>Payout is based on overall network hashrate</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper building-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5">
-                <h1>Maximum Efficiency</h1>
-                <p class="default-p">
-                    Efficiency is what drives the margins in Bitcoin transaction processing. As more miners compete to find a block the difficulty of the network rises respectively. When the network reaches the saturation point, the miners who are most efficient will make the most profit. The modern ASIC chips from BitFury deliver the maximum performance and efficiency possible.
-                </p>
-                <a href="tariffs.php" class="btn btn-warning top-banner-button margin-top-40">Start mining now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper text-center">
-    <div class="container">
-        <div class="row">
-    <div class="col-md-offset-1 col-md-10">
-        <h1 class="tall">Hashing24 was made by professionals for individuals who want to get involved in bitcoin mining</h1>
-        <p class="default-p">We believe that everyone should benefit from the mining and be able to have access the newest technologies and large scale industrial data centers from your laptop or mobile phone.</p>
-    </div>
-</div>
-
-
-<a href="register.php" class="btn btn-warning top-banner-button margin-top-40">Join Us</a>
-
-    </div>
-</div>
-
-<div class="gray-dark-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10">
-                <div class="main-promoblock-image pull-left"><img src="i/slide2.png" alt="Hashing24 - Let&#39;s work together!"></div>
-                <h1 class="text-uppercase font-bold">Let&#39;s work together!</h1>
-                <p class="default-p">We are open for partnership to all mining companies who meet our requirements. If you are interested to sell your hosting capacities for mining through Hashing24 platform, please <a href="partners.html">contact us</a>.</p>
-                <a href="support.php" class="btn btn-transparent-black top-banner-button margin-top-20">Contact us</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-<div class="default-wrapper">
-    <div class="container">
-        <h1 class="text-center">Representative offices</h1>
-<div class="row margin-top-55 margin-bottom-15">
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_scc81e.png?2" class="pull-left margin-right-20 office-photo" alt="Hashing24 - Scotland, UK">
-            <div class="office-country">Scotland, UK <img src="i/new_pages/flag_scc81e.png?2" alt="Scotland, UK"></div>
-            <div class="office-address">272 Bath Street, Glasgow, G2 4JR</div>
-            <div class="office-phone">+44 141 536 0163</div>
-            <div class="office-email"><a href="mailto:headquarter@hashing24.com">headquarter@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_thc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Thailand">
-            <div class="office-country">Thailand <img src="i/new_pages/flag_thc81e.png?2" alt="Thailand"></div>
-            <div class="office-phone">+66 60 002 4027</div>
-            <div class="office-email"><a href="mailto:thailand@hashing24.com">thailand@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_ukc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Ukraine">
-            <div class="office-country">Ukraine <img src="i/new_pages/flag_ukc81e.png?2" alt="Ukraine"></div>
-            <div class="office-phone">+380 44 290 8495</div>
-            <div class="office-email"><a href="mailto:ukraine@hashing24.com">ukraine@hashing24.com</a></div>
-        </div>
-    </div>
-</div>
-
-    </div>
-</div>
-!-->
 
                 <div class=""></div>
                 <div class="container">
-                        <div class="forced-client-menu">
+                    <div class="panel panel-default main_panel">
                         
+                        <div class="panel-body">
+
+                            <h1 style="text-align:center;font-size:170px;padding-top:80px;font-weight:bold;color:#e0e6ea;">404</h1>
+
                         </div>
-                            
-
-
-
-
-
-<script>
-$('#watchVideoModal').on('show.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
-});
-$('#watchVideoModal').on('hide.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
-})
-</script>
-
+                    </div>
                 </div>
 
-                	
-<div class="articles">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 article-preview article1">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="whyus.php"><h4>Why use Hashing24?</h4></a>
-            <p>Hashing24 is the best option<br/>available for users<br/>who want to mine bitcoin ...
-            <a href="whyus.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 article-preview article3">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="howitworks.php"><h4>How does Hashing24 work?</h4></a>
-            <p>Bitcoin mining has changed.<br />Today, for someone to mine and<br />get the same success ...
-            <a href="howitworks.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 article-preview article4">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="index.php"><h4>Affiliate program</h4></a>
-            <p>Do you have a website whose visitors<br />are interested in bitcoin? If so, then<br />you can start earning ...
-            <a href="index.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+                
             </div>
             
 
@@ -608,7 +374,7 @@ $('#watchVideoModal').on('hide.bs.modal', function (e) {
         </div>
         <div class="modal-footer">
             <div class="text-left">
-            Find detailed information on how the cost is covered and calculated in our terms of use <a href="terms.php">here</a>.
+            Find detailed information on how the cost is covered and calculated in our terms of use <a href="/terms">here</a>.
             <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -619,12 +385,13 @@ $('#watchVideoModal').on('hide.bs.modal', function (e) {
 
 
 <?php include_once 'footer.php';?>
+
         <div class='notifications top-right'></div>
         <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-78502902-1', 'auto');
   ga('send', 'pageview');
@@ -653,7 +420,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             f = function () { n.parentNode.insertBefore(s, n); };
         s.type = "text/javascript";
         s.async = true;
-        s.src = "../d31j93rd8oukbv.cloudfront.net/metrika/watch_ua.js";
+        s.src = "https://d31j93rd8oukbv.cloudfront.net/metrika/watch_ua.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
@@ -675,6 +442,4 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc
 
 
     </body>
-
-<!-- Mirrored from hashing24.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:47:43 GMT -->
 </html>

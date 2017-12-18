@@ -1,233 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-
-
-
-
-    
-<!-- Mirrored from hashing24.com/terms by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:14 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-        <meta charset="utf-8">
-        <meta name="okpay-verification" content="048b23c7-05fd-4d06-9871-8edaceb33391" />
-        <meta name="yandex-verification" content="6863280f28b10b18" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Terms and Conditions | Hashing24</title>
-
-        <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet" />
-        <link href="jquery-ui-1.10.4/css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
-        <link href="css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
-        <link href="css/font-awesome.min.css" rel="stylesheet" />
-        <link href="css/commonc55e.css?rev=97" rel="stylesheet" />
-        <link href="css/animationsc55e.css?rev=97" rel="stylesheet" />
-        <link href="css/printc55e.css?rev=97" rel="stylesheet" />
-        <link href="css/tmpc55e.css?rev=97" rel="stylesheet" />
-
-        
-
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap-3.1.1/js/bootstrap.js"></script>
-        <script src="js/moment.js"></script>
-        <script src="js/bootstrap-notify.js"></script>
-        <script src="jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
-        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-        <script src="js/jquery.ui.touch-punch.js"></script>
-        <script src="js/jquery.cookie.js"></script>
-        <script src="js/bootstrap-tooltip.js"></script>
-        <script src="js/polyfill.js"></script>
-        <script src="js/clipboard.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/bignumber.min.js"></script>
-        <script src="../www.google.com/recaptcha/api2633.js?onload=onloadRCCallback&amp;render=explicit&amp;hl=en" async defer></script>
-
-        <script>
-        var RCs = ['registerRC', 'supportRC', 'partnersRC', 'authRC', 'helpRC'],
-            RCids = {};
-        var onloadRCCallback = function() {
-            RCs.forEach(function(rc) {
-                if ( document.getElementById(rc) ) {
-                    RCids[rc] = grecaptcha.render(rc, {
-                        'sitekey' : '6Lf-tzMUAAAAAGtf_pw_wsolTKqAqifJ7MYsqPmT'
-                    });
-                }
-            });
-        };
-        </script>
-
-        <script>
-
-var
-BO2FO_CONVERT_MULTIPLIER = 1000;
-
-</script>
-
-
-        <script src="common/commonc55e.js?rev=97"></script>
-        <script src="js/commonc55e.js?rev=97"></script>
-
-        
-
-        <!– Facebook Pixel Code –>
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','../connect.facebook.net/en_US/fbevents.js');
-fbq('init', '269296810123565');
-fbq('track', "PageView");
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=269296810123565&amp;ev=PageView&amp;noscript=1"/></noscript>
-<!– End Facebook Pixel Code –>
-
-        <meta name="ROBOTS" content="NOINDEX, FOLLOW" />
-    </head>
-    <body>
-        <!– Google Tag Manager –>
-<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-TMKS39"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TMKS39');</script>
-<!– End Google Tag Manager –>
-
-
-
-            <div class="page page_gray">
-                
-
-
-
-<div class="device-xs visible-xs"></div>
-<div class="device-sm visible-sm"></div>
-<div class="device-md visible-md"></div>
-<div class="device-lg visible-lg"></div>
-
-<div class="print-logo hidden print-visible"><img alt="Hashing24" width="250" src="i/hashing-logo.png"></div>
-
-<nav class="navbar navbar-static-top navbar-inverse">
-	<div class="container">
-        
-<div class="dropdown dropdown-language pull-right">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="icon"><img alt="en" src="i/flag_en.svg"><span class="hidden-md hidden-sm hidden-xs"> English</span></span>
-    </a>
-    <ul class="dropdown-menu">
-        <li>
-            <a class="j-change-lang" lang="ch" href="terms.html">
-                <img alt="ch" src="i/flag_ch.svg"><span class="hidden-md hidden-sm hidden-xs"> Chinese</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="en" href="terms.html">
-                <img alt="en" src="i/flag_en.svg"><span class="hidden-md hidden-sm hidden-xs"> English</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="es" href="terms.html">
-                <img alt="es" src="i/flag_es.svg"><span class="hidden-md hidden-sm hidden-xs"> Spanish</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="ind" href="terms.html">
-                <img alt="ind" src="i/flag_ind.svg"><span class="hidden-md hidden-sm hidden-xs"> Indonesian</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="jp" href="terms.html">
-                <img alt="jp" src="i/flag_jp.svg"><span class="hidden-md hidden-sm hidden-xs"> Japanese</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="lo" href="terms.html">
-                <img alt="lo" src="i/flag_lo.svg"><span class="hidden-md hidden-sm hidden-xs"> Laotian</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="ru" href="terms.html">
-                <img alt="ru" src="i/flag_ru.svg"><span class="hidden-md hidden-sm hidden-xs"> Russian</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="th" href="terms.html">
-                <img alt="th" src="i/flag_th.svg"><span class="hidden-md hidden-sm hidden-xs"> Thai</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="vn" href="terms.html">
-                <img alt="vn" src="i/flag_vn.svg"><span class="hidden-md hidden-sm hidden-xs"> Vietnamese</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
-<script>
-function changeLang() {
-    $.cookie('lang', $(this).attr('lang'), { path: '/' });
-}
-
-$('.j-change-lang').click(changeLang);
-</script>
-
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-collapse">
-			<span class="sr-only">Toggle Navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index2.html"><img alt="Hashing24" src="i/hashing-logo.png"></a>
-		</div>
-	    <div class="collapse navbar-collapse" id="top-navbar-collapse">
-            <ul class="nav navbar-nav navbar-right cc-nav">
-                <li class="margin-right-12"><a href="faq.html">FAQ</a></li>
-                <li class="margin-right-12"><a href="about.html">About Us</a></li>
-                <li class="margin-right-12"><a href="howitworks.html">How it Works</a></li>
-                <li class="margin-right-12"><a href="tariffs.html">Prices</a></li>
-
-                <li class="margin-right-12"><a href="calculator.html">Calculator</a></li>
-
-			        <li class="margin-right-12"><div class="margin-top-10"><a href="register.html" class="navbar-btn btn btn-warning btn-sm margin-left-12">Register an Account</a></div></li>
-			        <li class="margin-right-12"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signInModal"><small class="white">Sign In</small></a></li>
-	        </ul>
-	    </div>
-	</div>
-</nav>
-
-
-<div class="container common_information clearfix margin-top-8">
-	<div class="small-top-info">
-		<div class="row">
-			<div class="col-md-8 col-xs-12">
-                <ul class="list-inline pull-left">
-
-                <li class="margin-right-10">Price: </li>
-                <li class="margin-right-10">
-                    BTC/USD <span>15453.7263</span>
-                </li>
-                <li class="margin-right-10">
-                    BTC/EUR <span>13134.7401</span>
-                </li>
-                <li class="margin-left-15 margin-right-15 hidden-xs">Difficulty: <span>1 590 896 927 258</span></li>
-                <li class="margin-right-15 hidden-xs">Hashrate: <span>13760 PH/s</span></li>
-
-				</ul>
-			</div>
-
-			<div class="col-md-4 col-xs-12">
-			</div>
-		</div>
-	</div>
-</div>
+<?php include_once 'header.php';?>
 
 <!-- Modal -->
 <div class="modal fade modal-open bs-example-modal-sm" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -236,7 +7,7 @@ $('.j-change-lang').click(changeLang);
 		<div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	        <h4 class="modal-title">Sign In</h4>
-	        <small class="js_or-register-new">OR <a href="register.html">REGISTER NEW ACCOUNT</a></small>
+	        <small class="js_or-register-new">OR <a href="register.php">REGISTER NEW ACCOUNT</a></small>
 	    </div>
         <div class="modal-body">
             
@@ -307,11 +78,11 @@ $('.j-change-lang').click(changeLang);
     </div>
     <div class="row">
         <div class="col-md-12">
-            <a href="index2.html" class="btn btn-link js-reset_password" data-loading-text="Loading..."><small>I can&#39;t access my account</small></a>
+            <a href="index.php" class="btn btn-link js-reset_password" data-loading-text="Loading..."><small>I can&#39;t access my account</small></a>
         </div>
     </div>
     <div class="js-auth_inputs js-auth_verification display_none">
-        <p class="small text-center margin-top-5">Wrong code generated?<br>Solution is <a href="faq.html#q19">here</a>.</p>
+        <p class="small text-center margin-top-5">Wrong code generated?<br>Solution is <a href="faq.php#q19">here</a>.</p>
     </div>
     <div class="js-auth_inputs js-auth_login">
         <div class="sign-in-divider">
@@ -591,14 +362,14 @@ var fullDateString = new Date();
 <ol>
 <li>INFORMATION ABOUT US</li>
 <dl>
-<dt><b>1.1.</b> We operate the Site <a href='index2.html' rel='nofollow'>Hashing24.com</a>. To contact us, please see our <a href='support.html' rel='nofollow'>Support page</a>.</dt>
+<dt><b>1.1.</b> We operate the Site <a href='index.php' rel='nofollow'>Hashing24.com</a>. To contact us, please see our <a href='support.php' rel='nofollow'>Support page</a>.</dt>
 </dl>
 <li>OUR SERVICES</li>
 <dl>
 <dt><b>2.1.</b> <u>Mining Hardware, Services and Pool</u>. Bitcoin mining hardware (“Mining Hardware”) consists of specialized computing hardware, computer programs, networking interconnectivity and associated facilities that run proprietary Bitcoin mining software (“Software”). We are selling you the specific volume of processing power (the 'Service' or 'Services') of that Mining Hardware corresponding to an amount of processing power (measured in billions of Bitcoin calculations per second or “Gigahashes”) specified in each order for opportunity to make possible, but not guaranteed profit. We rent all Mining Hardware to provide Services to you and our other users (“Users”) and which we also use ourselves for our own account.</dt><br>
 <dt><b>2.2.</b> <u>Mining Contracts</u>.</dt><br>
 <dd><b>a.</b> When you enter this Agreement to offer us the right to provide you Service, and we accept your offer by sending you an order confirmation (an “Order Confirmation”), a contract (a “Mining Contract”) to provide Service is formed. Upon commencement of Service, we will allocate a part of Mining Hardware equal to certain amount of Bitcoin mining computer computational power (“Mining Contract Capacity”) to you for your use in mining Bitcoins.</dd>
-<dd><b>b.</b> The types of Mining Contracts potentially available at any time are described in detail at <a href='index2.html' rel='nofollow'>Hashing24.com</a>. You must have purchased a Mining Contract to have any right to use Services to obtain any right to Product (defined below).</dd><br>
+<dd><b>b.</b> The types of Mining Contracts potentially available at any time are described in detail at <a href='index.php' rel='nofollow'>Hashing24.com</a>. You must have purchased a Mining Contract to have any right to use Services to obtain any right to Product (defined below).</dd><br>
 <dt><b>2.3.</b> <u>Rental of Mining Hardware</u>. We rent the Mining Hardware to provide Services to you and our other Users, including customers who have current and valid Mining Contracts and also to use ourselves for our own account. You acknowledge that by executing this Agreement and reserving a Mining Contract, and by logging into our Site and accessing your account, you are undertaking Bitcoin mining on your behalf only, at your own risk and for your own benefit. In allocating to you the Mining Contract Capacity, we will use commercially reasonable efforts to rent the Mining Hardware on your behalf, partially on behalf of our other Users, and partially on behalf of ourselves. We retain for our own benefit the portion of the total Mining Hardware not allocated through Mining Contracts.</dt><br>
 <dt><b>2.4.</b> <u>Mining Product</u>. The Mining Hardware will mine Bitcoins by utilizing Hashing Power. The Bitcoins produced by the Mining Hardware (the “Product”) will be centrally collected by us, and we will distribute a portion of the Product to Users (“Customer Portion”) based upon the Mining Contract Capacity allocated under valid Mining Contracts held by Users during the period of effectiveness of your Mining Contract (the “Term”), with such distributions subject to Maintenance Fees.</dt><br>
 <dt><b>2.5.</b> <u>Distribution of Product Portions</u>. Customer Portions will be distributed to your Bitcoin Wallet (defined below).</dt><br>
@@ -759,7 +530,7 @@ var fullDateString = new Date();
         </div>
         <div class="modal-footer">
             <div class="text-left">
-            Find detailed information on how the cost is covered and calculated in our terms of use <a href="terms.html">here</a>.
+            Find detailed information on how the cost is covered and calculated in our terms of use <a href="terms.php">here</a>.
             <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -769,53 +540,7 @@ var fullDateString = new Date();
 
 
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-                <div class="row">
-                    <div class="col-sm-4 footer-col">
-                        <p><a href="index2.html">Home</a><p>
-                        <p><a href="about.html">About Us</a></p>
-                        <p><a href="howitworks.html">How it Works</a></p>
-                        <p><a href="tariffs.html">Prices</a></p>
-                    </div>
-                    <div class="col-sm-4 footer-col">
-                        <p><a href="whyus.html">Why Hashing24</a></p>
-                        <p><a href="register.html">Register an Account</a></p>
-                        <p><a href="partners.html">Partners</a></p>
-                        <p><a href="support.html">Support</a></p>
-                    </div>
-                    <div class="col-sm-4 footer-col">
-
-                        <p><a href="terms.html">Terms &amp; Conditions</a></p>
-                        <p><a href="privacy.html">Privacy Policy</a></p>
-                        <p><a href="aml_kyc_policy.html">AML/KYC Policy</a></p>
-                        <p><a href="disclaimer.html">Disclaimer</a></p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com/hashing24/" class="footer-fb" target="_blank"><img src="i/fb29.png" alt="Facebook Hashing24 Page" /></a>
-                    <img alt="Comodo" class="icon-comodo" src="i/icon_comodo.png"/>
-                </div>
-            </div>
-        </div>
-        <div class="payments-block text-center">
-            <img src="i/payments/visa_verified.png" alt="Visa Verified">
-            <img src="i/payments/visa.png" alt="Visa">
-            <img src="i/payments/visa_electron.png" alt="Visa Electron">
-            <img src="i/payments/mastercard_secure.png" alt="Mastercard Secure">
-            <img src="i/payments/mastercard.png" alt="Mastercard">
-            <img src="i/payments/maestro.png" alt="Maestro">
-        </div>
-        <div style="display: none;"><a target="_blank" rel="nofollow" href="https://www.couponchief.com/hashing24">Hashing24.com Coupons</a></div>
-        <p class="margin-top-15 copy text-center"><small>Hashing24 does not provide services for the USA residents.</small></p>
-        <p class="margin-top-15 copy text-center"><small>© 2015&mdash;2017 NEWSTAR L.P. (UK). All rights reserved.</small></p>
-    </div>
-</footer>
+<?php include_once 'footer.php';?>
 
         <div class='notifications top-right'></div>
         <script>

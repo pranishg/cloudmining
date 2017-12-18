@@ -1,4 +1,4 @@
-<?php include_once 'header.php';?>
+ <?php include_once 'header.php';?>
 <!-- Modal -->
 <div class="modal fade modal-open bs-example-modal-sm" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-sm">
@@ -89,13 +89,13 @@
         </div>
         <div class="sign-in-social">sign in with social account</div>
         <div class="sign-in-social-icons">
-            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback&amp;response_type=code&amp;client_id=1947287212159869&amp;state=&amp;scope=email">
+            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?scope=email&amp;state=&amp;client_id=1947287212159869&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback">
                 <span class="fa-stack icon-social icon-fb">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;scope=email&amp;state=">
+            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;response_type=code&amp;client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;state=&amp;scope=email">
                 <span class="fa-stack icon-social icon-gp">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -332,188 +332,8 @@ var fullDateString = new Date();
 
 
                 
-<div class="top-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="top-banner-title">Start Bitcoin Mining with Industry Leaders</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7">
-                <div class="top-banner-subtitle">We make industrial mining accessible for everyone. You get access to the newest and most advanced technologies in the industry, provided by the leading companies.</div>
-            </div>
-        </div>
-        <a href="tariffs.php" class="btn btn-warning top-banner-button margin-right-25">Start mining now</a>
-        <a href="#" class="btn btn-transparent top-banner-button" data-toggle="modal" data-target="#watchVideoModal">
-            <span class="glyphicon glyphicon-play-circle"></span>
-        Watch video
-        </a>
-    </div>
-</div>
 
-<div class="modal fade" id="watchVideoModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg?enablejsapi=1" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>Three Easy Steps to Start Bitcoin Mining</h2>
-            </div>
-        </div>
-        <div class="row margin-bottom-30 margin-top-25">
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_2.png" alt="Hashing24 - REGISTER"></div>
-                <h4 class="text-center step-title">
-                    <span class="step_badge">1</span>
-                    <a href="register.php">REGISTER</a>
-                </h4>
-                <div class="step-info">Don’t worry, it will take only a few<br> minutes to complete registration.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_1.png" alt="Choose"></div>
-                <h4 class="text-center step-title"><span class="step_badge">2</span> <a href="tariffs.php">Choose</a> your plan</h4>
-                <div class="step-info">Simply select your power<br> plan and pay for it.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_3.png" alt="Hashing24 - Receive bitcoin"></div>
-                <h4 class="text-center step-title"><span class="step_badge">3</span> Receive bitcoin</h4>
-                <div class="step-info">Now you all set up and ready to<br> collect freshly baked bitcoins.</div>
-            </div>
-        </div>
-            <div class="margin-top-40 text-center">
-                <a href="tariffs.php" class="btn btn-transparent-orange top-banner-button">Start now</a>
-            </div>
-    </div>
-</div>
-
-<div class="why-profitable">
-    <div class="container">
-        <div class="why-profitable-inner clearfix">
-        WHY BITCOIN MINING IS profitable ?
-            <a href="howitworks.php" class="btn btn-transparent w150 pull-right margin-top-8">Find out</a>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="video-container margin-top-40">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h1>Who we are and what we offer?</h1>
-                <p class="default-p f18">
-                    We the video provides turnkey renting solutions from the largest bitcoin mining data centers.
-                </p>
-                <ul class="top-info-wrapper-list">
-                    <li>Official reseller of industry leading companies</li>
-                    <li>Data centers in Iceland and Georgia</li>
-                    <li>The newest ASIC chips</li>
-                    <li>Air and immersion cooling technology</li>
-                    <li>Ultimate performance at low cost</li>
-                    <li>100% uptime guarantee</li>
-                    <li>Payout is based on overall network hashrate</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper building-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5">
-                <h1>Maximum Efficiency</h1>
-                <p class="default-p">
-                    Efficiency is what drives the margins in Bitcoin transaction processing. As more miners compete to find a block the difficulty of the network rises respectively. When the network reaches the saturation point, the miners who are most efficient will make the most profit. The modern ASIC chips from BitFury deliver the maximum performance and efficiency possible.
-                </p>
-                <a href="tariffs.php" class="btn btn-warning top-banner-button margin-top-40">Start mining now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper text-center">
-    <div class="container">
-        <div class="row">
-    <div class="col-md-offset-1 col-md-10">
-        <h1 class="tall">Hashing24 was made by professionals for individuals who want to get involved in bitcoin mining</h1>
-        <p class="default-p">We believe that everyone should benefit from the mining and be able to have access the newest technologies and large scale industrial data centers from your laptop or mobile phone.</p>
-    </div>
-</div>
-
-
-<a href="register.php" class="btn btn-warning top-banner-button margin-top-40">Join Us</a>
-
-    </div>
-</div>
-
-<div class="gray-dark-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10">
-                <div class="main-promoblock-image pull-left"><img src="i/slide2.png" alt="Hashing24 - Let&#39;s work together!"></div>
-                <h1 class="text-uppercase font-bold">Let&#39;s work together!</h1>
-                <p class="default-p">We are open for partnership to all mining companies who meet our requirements. If you are interested to sell your hosting capacities for mining through Hashing24 platform, please <a href="partners.html">contact us</a>.</p>
-                <a href="support.php" class="btn btn-transparent-black top-banner-button margin-top-20">Contact us</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-<div class="default-wrapper">
-    <div class="container">
-        <h1 class="text-center">Representative offices</h1>
-<div class="row margin-top-55 margin-bottom-15">
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_scc81e.png?2" class="pull-left margin-right-20 office-photo" alt="Hashing24 - Scotland, UK">
-            <div class="office-country">Scotland, UK <img src="i/new_pages/flag_scc81e.png?2" alt="Scotland, UK"></div>
-            <div class="office-address">272 Bath Street, Glasgow, G2 4JR</div>
-            <div class="office-phone">+44 141 536 0163</div>
-            <div class="office-email"><a href="mailto:headquarter@hashing24.com">headquarter@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_thc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Thailand">
-            <div class="office-country">Thailand <img src="i/new_pages/flag_thc81e.png?2" alt="Thailand"></div>
-            <div class="office-phone">+66 60 002 4027</div>
-            <div class="office-email"><a href="mailto:thailand@hashing24.com">thailand@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_ukc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Ukraine">
-            <div class="office-country">Ukraine <img src="i/new_pages/flag_ukc81e.png?2" alt="Ukraine"></div>
-            <div class="office-phone">+380 44 290 8495</div>
-            <div class="office-email"><a href="mailto:ukraine@hashing24.com">ukraine@hashing24.com</a></div>
-        </div>
-    </div>
-</div>
-
-    </div>
-</div>
-!-->
-
-                <div class=""></div>
+                <div class="bordered-top"></div>
                 <div class="container">
                         <div class="forced-client-menu">
                         
@@ -522,62 +342,288 @@ var fullDateString = new Date();
 
 
 
-
-
-<script>
-$('#watchVideoModal').on('show.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
-});
-$('#watchVideoModal').on('hide.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
-})
-</script>
-
                 </div>
 
-                	
-<div class="articles">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 article-preview article1">
+                <div class="bc-wrapper">
+    <div class="container">
+        <h1 class="margin-bottom-30">Mining Calculator</h1>
         <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="whyus.php"><h4>Why use Hashing24?</h4></a>
-            <p>Hashing24 is the best option<br/>available for users<br/>who want to mine bitcoin ...
-            <a href="whyus.php">more</a>
-            </p>
+            <div class="col-md-5">
+                <div class="bc-label">One-time cost</div>
+                <div class="bc-info-block">
+                    <div currency="BTC" class="bc-cost-option text-center hidden j_bc-cost-label"></div>
+                    <div currency="USD" class="bc-cost-option text-center hidden j_bc-cost-label"></div>
+                    <div currency="EUR" class="bc-cost-option text-center hidden j_bc-cost-label"></div>
+                </div>
+                <div class="bc-info-block bc-info-block-first">
+                    <div class="bc-cost-option">Block reward</div>
+                    <div class="bc-cost-option text-center">12.5 BTC</div>
+                </div>
+                <div class="bc-info-block bc-info-block-last">
+                    <div class="bc-cost-option">Current difficulty</div>
+                    <div class="bc-cost-option text-center">1 590 896 927 258</div>
+                </div>
+                <div class="bc-info-block bc-info-block-first">
+                    <div class="bc-cost-option">Daily maintenance</div>
+                    <div class="bc-cost-option text-center"><span class="j_maintenance">&mdash;</span> USD</div>
+                </div>
+                <div class="bc-info-block bc-info-block-last">
+                    <div class="bc-cost-option">Current price BTC/USD</div>
+                    <div class="bc-cost-option text-center">15453.7263 USD</div>
+                </div>
+                <div class="bc-tip">* Calculations are just for information purposes and can differ from real results</div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 article-preview article3">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="howitworks.php"><h4>How does Hashing24 work?</h4></a>
-            <p>Bitcoin mining has changed.<br />Today, for someone to mine and<br />get the same success ...
-            <a href="howitworks.php">more</a>
-            </p>
+            <div class="col-md-4">
+                <div class="bc-label">Power</div>
+                <div class="bc-input-wrapper">
+                    <input name="bc-power" class="bc-input" value="100 GH/s">
+                    <div class="bc-input-steps">
+                        <div class="bc-input-step bc-input-step-up" step="100"></div>
+                        <div class="bc-input-step bc-input-step-down" step="-100"></div>
+                    </div>
+                </div>
+                <div class="bc-label">Change Difficulty*</div>
+                <div class="bc-input-wrapper">
+                    <input name="bc-difficulty" class="bc-input" value="0.00%">
+                    <div class="bc-input-steps">
+                        <div class="bc-input-step bc-input-step-up" step="10"></div>
+                        <div class="bc-input-step bc-input-step-down" step="-10"></div>
+                    </div>
+                </div>
+                <div class="bc-label">Change Price*</div>
+                <div class="bc-input-wrapper">
+                    <input name="bc-rate" class="bc-input" value="0.00%">
+                    <div class="bc-input-steps">
+                        <div class="bc-input-step bc-input-step-up" step="10"></div>
+                        <div class="bc-input-step bc-input-step-down" step="-10"></div>
+                    </div>
+                </div>
+                <a href="#" class="bc-button j_go-calc">Calculate</a>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-4 article-preview article4">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="index.php"><h4>Affiliate program</h4></a>
-            <p>Do you have a website whose visitors<br />are interested in bitcoin? If so, then<br />you can start earning ...
-            <a href="index.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
+<div class="bc-loading hidden"></div>
+<div class="bc-results hidden">
+    <div class="container j_result-current">
+        <div class="bc-results-header">Current Difficulty <span class="j_difficulty"></span></div>
+        <div class="bc-results-table-wrapper">
+            <table class="bc-results-table">
+                <tr>
+                    <th></th>
+                    <th>Day</th>
+                    <th>Week</th>
+                    <th>Month</th>
+                </tr>
+                <tr>
+                    <td>Mining</td>
+                    <td><span class="j_mining-day"></span> BTC</td>
+                    <td><span class="j_mining-week"></span> BTC</td>
+                    <td><span class="j_mining-month"></span> BTC</td>
+                </tr>
+                <tr>
+                    <td>Maintenance</td>
+                    <td><span class="j_maintenance-usd-day"></span> USD / <span class="j_maintenance-btc-day"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-week"></span> USD / <span class="j_maintenance-btc-week"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-month"></span> USD / <span class="j_maintenance-btc-month"></span> BTC</td>
+                </tr>
+                <tr>
+                    <td>Net Income</td>
+                    <td><b><span class="j_income-day-usd"></span> USD</b> / <span class="j_income-day"></span> BTC</td>
+                    <td><b><span class="j_income-week-usd"></span> USD</b> / <span class="j_income-week"></span> BTC</td>
+                    <td><b><span class="j_income-month-usd"></span> USD</b> / <span class="j_income-month"></span> BTC</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bc-results-divider"></div>
+    </div>
+    <div class="container j_result-next">
+        <div class="bc-results-header">Next Difficulty <span class="j_difficulty"></span></div>
+        <div class="bc-results-table-wrapper bc-results-table-wrapper-black">
+            <table class="bc-results-table">
+                <tr>
+                    <th></th>
+                    <th>Day</th>
+                    <th>Week</th>
+                    <th>Month</th>
+                </tr>
+                <tr>
+                    <td>Mining</td>
+                    <td><span class="j_mining-day"></span> BTC</td>
+                    <td><span class="j_mining-week"></span> BTC</td>
+                    <td><span class="j_mining-month"></span> BTC</td>
+                </tr>
+                <tr>
+                    <td>Maintenance</td>
+                    <td><span class="j_maintenance-usd-day"></span> USD / <span class="j_maintenance-btc-day"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-week"></span> USD / <span class="j_maintenance-btc-week"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-month"></span> USD / <span class="j_maintenance-btc-month"></span> BTC</td>
+                </tr>
+                <tr>
+                    <td>Net Income</td>
+                    <td><b><span class="j_income-day-usd"></span> USD</b> / <span class="j_income-day"></span> BTC</td>
+                    <td><b><span class="j_income-week-usd"></span> USD</b> / <span class="j_income-week"></span> BTC</td>
+                    <td><b><span class="j_income-month-usd"></span> USD</b> / <span class="j_income-month"></span> BTC</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bc-results-divider"></div>
+    </div>
+    <div class="container">
+        <p><b>Disclaimers of Liability:</b> The expected Bitcoin earnings are calculated based on the values entered and do not consider difficulty, exchange rate fluctuations, stale/reject/orphan rate, etc. These and other factors change every day/every week and can have effects on the expected earnings. Hashing24 will not be liable for any losses or damages caused by your use or misuse of this calculator.</p>
+        <div class="text-center margin-top-40">
+            <a href="tariffs.php" class="btn btn-lg btn-success w200">Start Mining</a>
+        </div>
+    </div>
+</div>
+
+<script>
+
+var pricePerThs = new Array();
+pricePerThs["BTC"] = 0.0231;
+pricePerThs["USD"] = 340;
+pricePerThs["EUR"] = 292;
+
+var minPower = 100,
+    maxPower = 1000000,
+    maintenanceUSD = 0.00033;
+    currencyRateUSD = 15453.726300;
+
+var calcModel = {
+    power: undefined,
+    difficulty: undefined,
+    rate: undefined
+};
+
+function updateModel() {
+    // power
+    var value = parseInt( $("[name='bc-power']").val() );
+    value = isNaN(value) ? minPower : value;
+    if (value < minPower) {
+        value = minPower;
+    }
+    else {
+        value = parseInt(value / minPower) * minPower;
+    }
+    value = Math.max(Math.min(maxPower, value), minPower);
+    calcModel.power = value;
+    // difficulty
+    value = parseFloat( $("[name='bc-difficulty']").val() );
+    value = isNaN(value) ? 10 : value;
+    value = Math.max(Math.min(1000, value), -99.99);
+    calcModel.difficulty = value;
+    // rate
+    value = parseFloat( $("[name='bc-rate']").val() );
+    value = isNaN(value) ? 10 : value;
+    value = Math.max(Math.min(1000, value), -99.99);
+    calcModel.rate = value;
+}
+updateModel();
+
+function updateInfo() {
+    $('.j_bc-cost-label').each(function(){
+        var curr = $(this).attr('currency'),
+            cost = pricePerThs[curr];
+        $(this).toggleClass('hidden', !cost).text(curr + ' ' +  formatCurrency(pricePerThs[curr] * calcModel.power / 1000, curr));
+    });
+
+    $('.j_maintenance').text(formatCurrency(maintenanceUSD * calcModel.power, 'USD', 4));
+}
+updateInfo();
+
+$('.bc-input-step').on('click', function(){
+    var step = parseInt($(this).attr('step')) || 0,
+        $input = $(this).closest('.bc-input-wrapper').find('.bc-input');
+
+    $input.val(parseFloat($input.val()) + step).change();
+});
+
+$("[name='bc-power']").on('change', function(){
+    updateModel();
+    updateInfo();
+    $(this).val(calcModel.power + ' GH/s');
+});
+$("[name='bc-difficulty']").on('change', function(){
+    updateModel();
+    var prefix = calcModel.difficulty > 0 ? '+' : '';
+    $(this).val(prefix + calcModel.difficulty.toFixed(2) + '%');
+});
+$("[name='bc-rate']").on('change', function(){
+    updateModel();
+    var prefix = calcModel.rate > 0 ? '+' : '';
+    $(this).val(prefix + calcModel.rate.toFixed(2) + '%');
+});
+
+var isRequesting = false;
+$('.j_go-calc').on('click', function(e){
+    e.preventDefault();
+    if (!isRequesting) {
+        isRequesting = true;
+        $('.bc-loading').removeClass('hidden');
+        $('.bc-results').addClass('hidden');
+        $.ajax({
+            type: "POST",
+            url: '/calculator',
+            data: calcModel
+        })
+        .done(function(data) {
+            if (data.success) {
+                var nDay = 7,
+                    nMonth = 31;
+                    data = data.data;
+
+                $('.bc-results .j_result-current .j_difficulty').html(triads(data.current.difficulty));
+                $('.bc-results .j_result-next .j_difficulty').html(triads(data.next.difficulty));
+
+
+                $('.bc-results .j_result-current .j_mining-day').text(formatCurrency(data.current.mining, 'BTC'));
+                $('.bc-results .j_result-current .j_mining-week').text(formatCurrency(data.current.mining * nDay, 'BTC'));
+                $('.bc-results .j_result-current .j_mining-month').text(formatCurrency(data.current.mining * nMonth, 'BTC'));
+
+                $('.bc-results .j_result-next .j_mining-day').text(formatCurrency(data.next.mining, 'BTC'));
+                $('.bc-results .j_result-next .j_mining-week').text(formatCurrency(data.next.mining * nDay, 'BTC'));
+                $('.bc-results .j_result-next .j_mining-month').text(formatCurrency(data.next.mining * nMonth, 'BTC'));
+
+                $('.bc-results .j_result-current .j_income-day-usd').text(formatCurrency(currencyRateUSD * data.current.income, 'USD'));
+                $('.bc-results .j_result-current .j_income-week-usd').text(formatCurrency(currencyRateUSD * data.current.income * nDay, 'USD'));
+                $('.bc-results .j_result-current .j_income-month-usd').text(formatCurrency(currencyRateUSD * data.current.income * nMonth, 'USD'));
+                $('.bc-results .j_result-current .j_income-day').text(formatCurrency(data.current.income, 'BTC'));
+                $('.bc-results .j_result-current .j_income-week').text(formatCurrency(data.current.income * nDay, 'BTC'));
+                $('.bc-results .j_result-current .j_income-month').text(formatCurrency(data.current.income * nMonth, 'BTC'));
+
+                $('.bc-results .j_result-next .j_income-day-usd').text(formatCurrency(currencyRateUSD / 100 * (100 + calcModel.rate) * data.next.income, 'USD'));
+                $('.bc-results .j_result-next .j_income-week-usd').text(formatCurrency(currencyRateUSD / 100 * (100 + calcModel.rate) * data.next.income * nDay, 'USD'));
+                $('.bc-results .j_result-next .j_income-month-usd').text(formatCurrency(currencyRateUSD / 100 * (100 + calcModel.rate) * data.next.income * nMonth, 'USD'));
+                $('.bc-results .j_result-next .j_income-day').text(formatCurrency(data.next.income, 'BTC'));
+                $('.bc-results .j_result-next .j_income-week').text(formatCurrency(data.next.income * nDay, 'BTC'));
+                $('.bc-results .j_result-next .j_income-month').text(formatCurrency(data.next.income * nMonth, 'BTC'));
+
+                $('.bc-results .j_result-current .j_maintenance-btc-day').text(formatCurrency(data.current.maintenance, 'BTC'));
+                $('.bc-results .j_result-current .j_maintenance-btc-week').text(formatCurrency(data.current.maintenance * nDay, 'BTC'));
+                $('.bc-results .j_result-current .j_maintenance-btc-month').text(formatCurrency(data.current.maintenance * nMonth, 'BTC'));
+
+                $('.bc-results .j_result-current .j_maintenance-usd-day').text(formatCurrency(data.maintenance_usd, 'USD', 4));
+                $('.bc-results .j_result-current .j_maintenance-usd-week').text(formatCurrency(data.maintenance_usd * nDay, 'USD', 4));
+                $('.bc-results .j_result-current .j_maintenance-usd-month').text(formatCurrency(data.maintenance_usd * nMonth, 'USD', 4));
+
+                $('.bc-results .j_result-next .j_maintenance-btc-day').text(formatCurrency(data.next.maintenance, 'BTC'));
+                $('.bc-results .j_result-next .j_maintenance-btc-week').text(formatCurrency(data.next.maintenance * nDay, 'BTC'));
+                $('.bc-results .j_result-next .j_maintenance-btc-month').text(formatCurrency(data.next.maintenance * nMonth, 'BTC'));
+
+                $('.bc-results .j_result-next .j_maintenance-usd-day').text(formatCurrency(data.maintenance_usd, 'USD', 4));
+                $('.bc-results .j_result-next .j_maintenance-usd-week').text(formatCurrency(data.maintenance_usd * nDay, 'USD', 4));
+                $('.bc-results .j_result-next .j_maintenance-usd-month').text(formatCurrency(data.maintenance_usd * nMonth, 'USD', 4));
+
+                $('.bc-results').removeClass('hidden');
+            }
+    	})
+        .always(function () {
+            isRequesting = false;
+            $('.bc-loading').addClass('hidden');
+        });
+    }
+});
+</script>
 
 
             </div>
@@ -619,6 +665,7 @@ $('#watchVideoModal').on('hide.bs.modal', function (e) {
 
 
 <?php include_once 'footer.php';?>
+
         <div class='notifications top-right'></div>
         <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -676,5 +723,5 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc
 
     </body>
 
-<!-- Mirrored from hashing24.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:47:43 GMT -->
+<!-- Mirrored from hashing24.com/calculator by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:09 GMT -->
 </html>

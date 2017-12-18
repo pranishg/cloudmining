@@ -1,4 +1,4 @@
-<?php include_once 'header.php';?>
+<?php include_once 'header.php'?>;
 <!-- Modal -->
 <div class="modal fade modal-open bs-example-modal-sm" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-sm">
@@ -89,13 +89,13 @@
         </div>
         <div class="sign-in-social">sign in with social account</div>
         <div class="sign-in-social-icons">
-            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback&amp;response_type=code&amp;client_id=1947287212159869&amp;state=&amp;scope=email">
+            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?state=&amp;scope=email&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback&amp;client_id=1947287212159869&amp;response_type=code">
                 <span class="fa-stack icon-social icon-fb">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;scope=email&amp;state=">
+            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;scope=email&amp;state=">
                 <span class="fa-stack icon-social icon-gp">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -332,188 +332,8 @@ var fullDateString = new Date();
 
 
                 
-<div class="top-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="top-banner-title">Start Bitcoin Mining with Industry Leaders</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7">
-                <div class="top-banner-subtitle">We make industrial mining accessible for everyone. You get access to the newest and most advanced technologies in the industry, provided by the leading companies.</div>
-            </div>
-        </div>
-        <a href="tariffs.php" class="btn btn-warning top-banner-button margin-right-25">Start mining now</a>
-        <a href="#" class="btn btn-transparent top-banner-button" data-toggle="modal" data-target="#watchVideoModal">
-            <span class="glyphicon glyphicon-play-circle"></span>
-        Watch video
-        </a>
-    </div>
-</div>
 
-<div class="modal fade" id="watchVideoModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg?enablejsapi=1" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>Three Easy Steps to Start Bitcoin Mining</h2>
-            </div>
-        </div>
-        <div class="row margin-bottom-30 margin-top-25">
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_2.png" alt="Hashing24 - REGISTER"></div>
-                <h4 class="text-center step-title">
-                    <span class="step_badge">1</span>
-                    <a href="register.php">REGISTER</a>
-                </h4>
-                <div class="step-info">Don’t worry, it will take only a few<br> minutes to complete registration.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_1.png" alt="Choose"></div>
-                <h4 class="text-center step-title"><span class="step_badge">2</span> <a href="tariffs.php">Choose</a> your plan</h4>
-                <div class="step-info">Simply select your power<br> plan and pay for it.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_3.png" alt="Hashing24 - Receive bitcoin"></div>
-                <h4 class="text-center step-title"><span class="step_badge">3</span> Receive bitcoin</h4>
-                <div class="step-info">Now you all set up and ready to<br> collect freshly baked bitcoins.</div>
-            </div>
-        </div>
-            <div class="margin-top-40 text-center">
-                <a href="tariffs.php" class="btn btn-transparent-orange top-banner-button">Start now</a>
-            </div>
-    </div>
-</div>
-
-<div class="why-profitable">
-    <div class="container">
-        <div class="why-profitable-inner clearfix">
-        WHY BITCOIN MINING IS profitable ?
-            <a href="howitworks.php" class="btn btn-transparent w150 pull-right margin-top-8">Find out</a>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="video-container margin-top-40">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h1>Who we are and what we offer?</h1>
-                <p class="default-p f18">
-                    We the video provides turnkey renting solutions from the largest bitcoin mining data centers.
-                </p>
-                <ul class="top-info-wrapper-list">
-                    <li>Official reseller of industry leading companies</li>
-                    <li>Data centers in Iceland and Georgia</li>
-                    <li>The newest ASIC chips</li>
-                    <li>Air and immersion cooling technology</li>
-                    <li>Ultimate performance at low cost</li>
-                    <li>100% uptime guarantee</li>
-                    <li>Payout is based on overall network hashrate</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper building-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5">
-                <h1>Maximum Efficiency</h1>
-                <p class="default-p">
-                    Efficiency is what drives the margins in Bitcoin transaction processing. As more miners compete to find a block the difficulty of the network rises respectively. When the network reaches the saturation point, the miners who are most efficient will make the most profit. The modern ASIC chips from BitFury deliver the maximum performance and efficiency possible.
-                </p>
-                <a href="tariffs.php" class="btn btn-warning top-banner-button margin-top-40">Start mining now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper text-center">
-    <div class="container">
-        <div class="row">
-    <div class="col-md-offset-1 col-md-10">
-        <h1 class="tall">Hashing24 was made by professionals for individuals who want to get involved in bitcoin mining</h1>
-        <p class="default-p">We believe that everyone should benefit from the mining and be able to have access the newest technologies and large scale industrial data centers from your laptop or mobile phone.</p>
-    </div>
-</div>
-
-
-<a href="register.php" class="btn btn-warning top-banner-button margin-top-40">Join Us</a>
-
-    </div>
-</div>
-
-<div class="gray-dark-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10">
-                <div class="main-promoblock-image pull-left"><img src="i/slide2.png" alt="Hashing24 - Let&#39;s work together!"></div>
-                <h1 class="text-uppercase font-bold">Let&#39;s work together!</h1>
-                <p class="default-p">We are open for partnership to all mining companies who meet our requirements. If you are interested to sell your hosting capacities for mining through Hashing24 platform, please <a href="partners.html">contact us</a>.</p>
-                <a href="support.php" class="btn btn-transparent-black top-banner-button margin-top-20">Contact us</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-<div class="default-wrapper">
-    <div class="container">
-        <h1 class="text-center">Representative offices</h1>
-<div class="row margin-top-55 margin-bottom-15">
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_scc81e.png?2" class="pull-left margin-right-20 office-photo" alt="Hashing24 - Scotland, UK">
-            <div class="office-country">Scotland, UK <img src="i/new_pages/flag_scc81e.png?2" alt="Scotland, UK"></div>
-            <div class="office-address">272 Bath Street, Glasgow, G2 4JR</div>
-            <div class="office-phone">+44 141 536 0163</div>
-            <div class="office-email"><a href="mailto:headquarter@hashing24.com">headquarter@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_thc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Thailand">
-            <div class="office-country">Thailand <img src="i/new_pages/flag_thc81e.png?2" alt="Thailand"></div>
-            <div class="office-phone">+66 60 002 4027</div>
-            <div class="office-email"><a href="mailto:thailand@hashing24.com">thailand@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_ukc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Ukraine">
-            <div class="office-country">Ukraine <img src="i/new_pages/flag_ukc81e.png?2" alt="Ukraine"></div>
-            <div class="office-phone">+380 44 290 8495</div>
-            <div class="office-email"><a href="mailto:ukraine@hashing24.com">ukraine@hashing24.com</a></div>
-        </div>
-    </div>
-</div>
-
-    </div>
-</div>
-!-->
-
-                <div class=""></div>
+                <div class="bordered-top"></div>
                 <div class="container">
                         <div class="forced-client-menu">
                         
@@ -522,62 +342,193 @@ var fullDateString = new Date();
 
 
 
-
-
-<script>
-$('#watchVideoModal').on('show.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
-});
-$('#watchVideoModal').on('hide.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
-})
-</script>
-
                 </div>
 
-                	
-<div class="articles">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 article-preview article1">
+                <div class="faq-block-gray">
+    <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="whyus.php"><h4>Why use Hashing24?</h4></a>
-            <p>Hashing24 is the best option<br/>available for users<br/>who want to mine bitcoin ...
-            <a href="whyus.php">more</a>
-            </p>
+            <div class="col-md-8">
+                <h1 class="margin-bottom-15">Frequently Asked Questions</h1>
+                <p class="f18">Below are some of the most common questions about Hashing24.</p>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-4 article-preview article3">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="howitworks.php"><h4>How does Hashing24 work?</h4></a>
-            <p>Bitcoin mining has changed.<br />Today, for someone to mine and<br />get the same success ...
-            <a href="howitworks.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 article-preview article4">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="index.php"><h4>Affiliate program</h4></a>
-            <p>Do you have a website whose visitors<br />are interested in bitcoin? If so, then<br />you can start earning ...
-            <a href="index.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
+<div class="page-block-wrapper">
+    <div class="container">
+        <div class="faq-controls">
+            <div class="faq-control j_faq-toggle-all">
+                <span class="faq-control-label-open">Open all</span>
+                <span class="faq-control-label-close">Close all</span>
+            </div>
+        </div>
+        <div class="faq-block" id="q1">
+            <div class="faq-block-title">What is Hashing24?</div>
+            <div class="faq-block-desc">    
+                <p>Hashing24 offers bitcoin mining without buying any equipment. Instead of it you are buying mining hashpower from our industrial mining equipment supplier BitFury with its data centers located in Iceland and Georgia.</p>
+                <p>Hashing24 was created to allow professionals and newcomers similar access to the same quality resources as the industrial miners to allow effective mining. Our cooperation with the industry leaders and access to the newest and most advanced technologies in the industry, quickly made us one of the world‘s leading cloud mining services.</p>
+                <p>As a Hashing24 customer, you can enjoy many benefits, including:</p>
+                <ul>
+                    <li>Access to the world-class data centers and network boasting more than 200 PH/s</li>
+                    <li>Instant access to your newly mined bitcoins (within 24 hours)</li>
+                    <li>Automatic deposit of mined bitcoins to the balance</li>
+                </ul>
+</div>
+        </div>
+        <div class="faq-block" id="q2">
+            <div class="faq-block-title">How does bitcoin mining work on your platform?</div>
+            <div class="faq-block-desc">    
+                <p>It’s pretty quick and easy. As soon as we receive a payment for your order, your contract will be added to your profile. Your order consists of two parts:</p>
+                <ul>
+                    <li>one-time payment (<b>not deposit</b>) for allocation of ordered power (min order is 100 GH/s, and you can make several orders)</li>
+                    <li>a daily maintenance fee for the equipment maintenance and its power supply</li>
+                </ul>
+                <p>When you are paying <b>one-time payment</b>, you are receiving hashpower according to your contract terms and duration. You will also pay an everyday maintenance fee. This cost is paid in USD, and deducted automatically from the mined volume of BTC, using current exchange rate BTC/USD. Thus, everyday cost for the maintenance in BTC depends on the exchange rate BTC/USD. If you don’t have enough balance during three days to cover your daily maintenance fee, the mining contract and service will be canceled.</p>
+</div>
+        </div>
+        <div class="faq-block" id="q3">
+            <div class="faq-block-title">How much profit can I make?</div>
+            <div class="faq-block-desc">    
+                <p>Earning per day in BTC depends on many factors, such as Block reward, Difficulty, Blocks mined etc and they can’t be predicted. Please note that our payout is based on overall network hashrate, and 100% uptime is guaranteed. We recommend all our clients to do their own research and their own earning calculation, however, we have some helpful tools for this. You can go to the “calculator” tab which is on the top of our website to see how you can calculate your earnings. All the mined bitcoins will be automatically added to your balance.</p>
+</div>
+        </div>
+        <div class="faq-block" id="q4">
+            <div class="faq-block-title">What does 100% uptime guarantee mean?</div>
+            <div class="faq-block-desc">    
+                <p>If you were an individual miner there would be always a possibility that your mining hardware could crash, slow down or completely break. Using our platform you will never happen to face any issues like these.</p>
+</div>
+        </div>
+        <div class="faq-block" id="q5">
+            <div class="faq-block-title">How can I pay?</div>
+            <div class="faq-block-desc"><ol> <li>Bitcoins: you can buy Bitcoin on any online exchanger: <a target="_blank" href="https://www.buybitcoinworldwide.com/">https://www.buybitcoinworldwide.com/</a>, <a target="_blank" href="https://howtobuybitcoins.info/"> https://howtobuybitcoins.info/</a></li> <li>Visa/Mastercard</li> <li>Bank wire transfer</li> </ol>
+</div>
+        </div>
+        <div class="faq-block" id="q6">
+            <div class="faq-block-title">What is maintenance fee?</div>
+            <div class="faq-block-desc">    
+                <p>The maintenance fee covers all costs related to mining including, inter alia:</p>
+                <ul>
+                    <li>electricity cost</li>
+                    <li>cooling systems</li>
+                    <li>maintenance work</li>
+                    <li>hosting services</li>
+                </ul>
+</div>
+        </div>
+        <div class="faq-block" id="q7">
+            <div class="faq-block-title">How often will I receive my profit?</div>
+            <div class="faq-block-desc"><p>Newly mined bitcoins are credited to your balance once per day for the previous mining day.</p><p> Our minimum withdrawal amount is 0.002 BTC. You can request a withdrawal any time.</p>
+</div>
+        </div>
+        <div class="faq-block" id="q8">
+            <div class="faq-block-title">How can I get in touch with you if I need help?</div>
+            <div class="faq-block-desc">    
+                <p>Please contact us at: <a href="mailto:support@hashing24.com">support@hashing24.com</a> or simply fill out this form:<br>
+                <a href="support.php">https://hashing24.com/support</a></p>
+</div>
+        </div>
+        <div class="faq-block" id="q9">
+            <div class="faq-block-title">When does mining start?</div>
+            <div class="faq-block-desc"> <p>Mining starts automatically at 00:00 UTC. Mined Bitcoins are credited automatically to the customer’s balance once a day for the previous mining day.</p></div>
+        </div>
+        <div class="faq-block" id="q10">
+            <div class="faq-block-title">How to restore the password?</div>
+            <div class="faq-block-desc">    
+                <p>In order to restore your password, please:</p>
+                <ul>
+                    <li>Click on the Sign In</li>
+                    <li>Enter your email</li>
+                    <li>Click on the "I can't access my account"</li>
+                    <li>You will receive an email with further step by step instructions</li>
+                </ul>
+</div>
+        </div>
+        <div class="faq-block" id="q11">
+            <div class="faq-block-title">How do I withdraw?</div>
+            <div class="faq-block-desc">    <p>In order to make a withdrawal:</p> <ul> <li>Sign In to your account</li> <li>Click on the "Withdraw" tab</li> <li>Choose type of coins</li> <li>Enter amount</li> <li>Choose your wallet (or enter new wallet)</li> <li>Click on the withdraw button</li> <li>Check your email inbox, you will receive an email with confirmation link</li> <li>Click on the confirmation link</li> <li>Our minimum withdrawal amount is 0.002 BTC. You can request a withdrawal any time. Withdrawal requests are processed the next day after the request has been placed (UTC time)</li> </ul></div>
+        </div>
+        <div class="faq-block" id="q12">
+            <div class="faq-block-title">How to disable 2-step authentication?</div>
+            <div class="faq-block-desc">    
+                <p>We can disable your 2-step authentication. Please follow the instructions below:</p>
+                <ul>
+                    <li>Click on this link: <a href="support.php">https://hashing24.com/support</a></li>
+                    <li>Enter your first and last name, email</li>
+                    <li>Enter your PIN code in the message field (PIN code that you generated during the registration)</li>
+                    <li>Click on the "Submit"</li>
+                    <li>We will receive your request and after checking your PIN code we will disable your 2-step authentication</li>
+                </ul>
+</div>
+        </div>
+        <div class="faq-block" id="q13">
+            <div class="faq-block-title">Which bitcoins do I receive for mining?</div>
+            <div class="faq-block-desc">We can guarantee that you will receive only new bitcoins, which have been recently mined. This can be checked on <a href="https://blockchain.info/" target="_blank">blockchain.info</a> by putting in the transaction that you receive after your withdrawal from our service. Thus, everyone can be confident that we are indeed mining bitcoins and we are not some ponzi scheme.
+
+</div>
+        </div>
+        <div class="faq-block" id="q14">
+            <div class="faq-block-title">Why does my withdrawal transaction have many different wallet addresses?
+</div>
+            <div class="faq-block-desc">The clients' transactions are grouped together for withdrawal to optimise and increase the speed of transactions.
+</div>
+        </div>
+        <div class="faq-block" id="q16">
+            <div class="faq-block-title">What do I do if I paid the money for the contract but it hasn't been activated?
+</div>
+            <div class="faq-block-desc"><ul>
+<li> Sign In to your account</li>
+<li>Choose plan on this page: <a href="tariffs.php">https://hashing24.com/tariffs</a> </li>
+<li>Choose price in BTC/USD/EUR</li> 
+<li>Click on the "Buy" button</li> 
+<li>Check details of your order and click on the "Next Step" button</li>
+<li> Choose the payment method that you used previously and click “Buy”</li> 
+<li>Your plan will be purchased using your current balance</li>  
+</ul> 
+<p> P.S. You don’t need to pay again, you will just use the balance that you have on your account.</p></div>
+        </div>
+        <div class="faq-block" id="q17">
+            <div class="faq-block-title">What does the payout amount depend on?</div>
+            <div class="faq-block-desc">The number of bitcoins that can be mined and circulated is limited. The more bitcoins are being mined, the higher mining difficulty gets increased, which requires an additional time for mining. The amount of bitcoins that are credited to the balance is also influenced by the BTC/USD exchange rate, as the maintenance cost of the contract is paid in USD and we’ll need to sell some part of mined bitcoins due to the Coindesk BPI daily closing price for its covering. Thus, the higher the BTC price, the less you need to pay for the maintenance and the higher is the payout from the contract.</div>
+        </div>
+        <div class="faq-block" id="q18">
+            <div class="faq-block-title">What is 'Reinvestment'? How do I use it?
+</div>
+            <div class="faq-block-desc">The “Reinvestment" function allows you to buy additional mining hashpower, using the mined coins that you have on your balance.</br>Once you click on “Reinvestment” button, the order for the maximum allowed contract volume will be placed automatically. You will just need to check the details of this order and click on “Pay” button. The payment will be done from your Hashing24 account balance.
+
+</div>
+        </div>
+        <div class="faq-block" id="q19">
+            <div class="faq-block-title">What to do if 2-step code is not working?</div>
+            <div class="faq-block-desc"><p>This might be because the time on your Google Authenticator app is not synchronize correctly. To make sure that you have the correct time:</p>
+<ol>
+<li>Go to the main menu in the Google Authenticator app</li>
+<li>Click Settings</li>
+<li>Click Time Correction for codes</li>
+<li>Click "Sync now"</li>
+</ol>
+<p>The app will confirm that the time has been synced, and you should now be able to use your verification codes to sign in. The synchronization will only affect the internal time of your Google Authenticator app and will not change your device’s Date & time settings.</p></div>
+        </div>
+    </div>
+</div>
+
+<script>
+$('.faq-block-title').on('click', function(){
+    $(this).closest('.faq-block').toggleClass('faq-block-expanded');
+});
+
+$('.j_faq-toggle-all').on('click', function(){
+    var $self = $(this);
+    $self.toggleClass('faq-control-expanded');
+    $('.faq-block').toggleClass('faq-block-expanded', $self.hasClass('faq-control-expanded'));
+});
+
+var qMatches = location.hash.match(new RegExp('(q\\d+)'));
+if(qMatches) {
+    var qID = qMatches[1];
+    $('#'+qID+'.faq-block').toggleClass('faq-block-expanded');
+}
+
+</script>
 
 
             </div>
@@ -676,5 +627,5 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc
 
     </body>
 
-<!-- Mirrored from hashing24.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:47:43 GMT -->
+<!-- Mirrored from hashing24.com/faq by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:02 GMT -->
 </html>

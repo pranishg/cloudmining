@@ -1,233 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-
-
-
-
-    
-<!-- Mirrored from hashing24.com/disclaimer by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:16 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-        <meta charset="utf-8">
-        <meta name="okpay-verification" content="048b23c7-05fd-4d06-9871-8edaceb33391" />
-        <meta name="yandex-verification" content="6863280f28b10b18" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Disclaimer | Hashing24</title>
-
-        <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet" />
-        <link href="jquery-ui-1.10.4/css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
-        <link href="css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
-        <link href="css/font-awesome.min.css" rel="stylesheet" />
-        <link href="css/commonc55e.css?rev=97" rel="stylesheet" />
-        <link href="css/animationsc55e.css?rev=97" rel="stylesheet" />
-        <link href="css/printc55e.css?rev=97" rel="stylesheet" />
-        <link href="css/tmpc55e.css?rev=97" rel="stylesheet" />
-
-        
-
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap-3.1.1/js/bootstrap.js"></script>
-        <script src="js/moment.js"></script>
-        <script src="js/bootstrap-notify.js"></script>
-        <script src="jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
-        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-        <script src="js/jquery.ui.touch-punch.js"></script>
-        <script src="js/jquery.cookie.js"></script>
-        <script src="js/bootstrap-tooltip.js"></script>
-        <script src="js/polyfill.js"></script>
-        <script src="js/clipboard.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/bignumber.min.js"></script>
-        <script src="../www.google.com/recaptcha/api2633.js?onload=onloadRCCallback&amp;render=explicit&amp;hl=en" async defer></script>
-
-        <script>
-        var RCs = ['registerRC', 'supportRC', 'partnersRC', 'authRC', 'helpRC'],
-            RCids = {};
-        var onloadRCCallback = function() {
-            RCs.forEach(function(rc) {
-                if ( document.getElementById(rc) ) {
-                    RCids[rc] = grecaptcha.render(rc, {
-                        'sitekey' : '6Lf-tzMUAAAAAGtf_pw_wsolTKqAqifJ7MYsqPmT'
-                    });
-                }
-            });
-        };
-        </script>
-
-        <script>
-
-var
-BO2FO_CONVERT_MULTIPLIER = 1000;
-
-</script>
-
-
-        <script src="common/commonc55e.js?rev=97"></script>
-        <script src="js/commonc55e.js?rev=97"></script>
-
-        
-
-        <!– Facebook Pixel Code –>
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','../connect.facebook.net/en_US/fbevents.js');
-fbq('init', '269296810123565');
-fbq('track', "PageView");
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=269296810123565&amp;ev=PageView&amp;noscript=1"/></noscript>
-<!– End Facebook Pixel Code –>
-
-        <meta name="ROBOTS" content="NOINDEX, FOLLOW" />
-    </head>
-    <body>
-        <!– Google Tag Manager –>
-<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-TMKS39"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TMKS39');</script>
-<!– End Google Tag Manager –>
-
-
-
-            <div class="page page_gray">
-                
-
-
-
-<div class="device-xs visible-xs"></div>
-<div class="device-sm visible-sm"></div>
-<div class="device-md visible-md"></div>
-<div class="device-lg visible-lg"></div>
-
-<div class="print-logo hidden print-visible"><img alt="Hashing24" width="250" src="i/hashing-logo.png"></div>
-
-<nav class="navbar navbar-static-top navbar-inverse">
-	<div class="container">
-        
-<div class="dropdown dropdown-language pull-right">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="icon"><img alt="en" src="i/flag_en.svg"><span class="hidden-md hidden-sm hidden-xs"> English</span></span>
-    </a>
-    <ul class="dropdown-menu">
-        <li>
-            <a class="j-change-lang" lang="ch" href="disclaimer.html">
-                <img alt="ch" src="i/flag_ch.svg"><span class="hidden-md hidden-sm hidden-xs"> Chinese</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="en" href="disclaimer.html">
-                <img alt="en" src="i/flag_en.svg"><span class="hidden-md hidden-sm hidden-xs"> English</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="es" href="disclaimer.html">
-                <img alt="es" src="i/flag_es.svg"><span class="hidden-md hidden-sm hidden-xs"> Spanish</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="ind" href="disclaimer.html">
-                <img alt="ind" src="i/flag_ind.svg"><span class="hidden-md hidden-sm hidden-xs"> Indonesian</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="jp" href="disclaimer.html">
-                <img alt="jp" src="i/flag_jp.svg"><span class="hidden-md hidden-sm hidden-xs"> Japanese</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="lo" href="disclaimer.html">
-                <img alt="lo" src="i/flag_lo.svg"><span class="hidden-md hidden-sm hidden-xs"> Laotian</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="ru" href="disclaimer.html">
-                <img alt="ru" src="i/flag_ru.svg"><span class="hidden-md hidden-sm hidden-xs"> Russian</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="th" href="disclaimer.html">
-                <img alt="th" src="i/flag_th.svg"><span class="hidden-md hidden-sm hidden-xs"> Thai</span>
-            </a>
-        </li>
-        <li>
-            <a class="j-change-lang" lang="vn" href="disclaimer.html">
-                <img alt="vn" src="i/flag_vn.svg"><span class="hidden-md hidden-sm hidden-xs"> Vietnamese</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
-<script>
-function changeLang() {
-    $.cookie('lang', $(this).attr('lang'), { path: '/' });
-}
-
-$('.j-change-lang').click(changeLang);
-</script>
-
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-collapse">
-			<span class="sr-only">Toggle Navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index2.html"><img alt="Hashing24" src="i/hashing-logo.png"></a>
-		</div>
-	    <div class="collapse navbar-collapse" id="top-navbar-collapse">
-            <ul class="nav navbar-nav navbar-right cc-nav">
-                <li class="margin-right-12"><a href="faq.html">FAQ</a></li>
-                <li class="margin-right-12"><a href="about.html">About Us</a></li>
-                <li class="margin-right-12"><a href="howitworks.html">How it Works</a></li>
-                <li class="margin-right-12"><a href="tariffs.html">Prices</a></li>
-
-                <li class="margin-right-12"><a href="calculator.html">Calculator</a></li>
-
-			        <li class="margin-right-12"><div class="margin-top-10"><a href="register.html" class="navbar-btn btn btn-warning btn-sm margin-left-12">Register an Account</a></div></li>
-			        <li class="margin-right-12"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signInModal"><small class="white">Sign In</small></a></li>
-	        </ul>
-	    </div>
-	</div>
-</nav>
-
-
-<div class="container common_information clearfix margin-top-8">
-	<div class="small-top-info">
-		<div class="row">
-			<div class="col-md-8 col-xs-12">
-                <ul class="list-inline pull-left">
-
-                <li class="margin-right-10">Price: </li>
-                <li class="margin-right-10">
-                    BTC/USD <span>15453.7263</span>
-                </li>
-                <li class="margin-right-10">
-                    BTC/EUR <span>13134.7401</span>
-                </li>
-                <li class="margin-left-15 margin-right-15 hidden-xs">Difficulty: <span>1 590 896 927 258</span></li>
-                <li class="margin-right-15 hidden-xs">Hashrate: <span>13760 PH/s</span></li>
-
-				</ul>
-			</div>
-
-			<div class="col-md-4 col-xs-12">
-			</div>
-		</div>
-	</div>
-</div>
+<?php include_once 'header.php';?>
 
 <!-- Modal -->
 <div class="modal fade modal-open bs-example-modal-sm" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -236,7 +7,7 @@ $('.j-change-lang').click(changeLang);
 		<div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	        <h4 class="modal-title">Sign In</h4>
-	        <small class="js_or-register-new">OR <a href="register.html">REGISTER NEW ACCOUNT</a></small>
+	        <small class="js_or-register-new">OR <a href="register.php">REGISTER NEW ACCOUNT</a></small>
 	    </div>
         <div class="modal-body">
             
@@ -307,11 +78,11 @@ $('.j-change-lang').click(changeLang);
     </div>
     <div class="row">
         <div class="col-md-12">
-            <a href="index2.html" class="btn btn-link js-reset_password" data-loading-text="Loading..."><small>I can&#39;t access my account</small></a>
+            <a href="index.php" class="btn btn-link js-reset_password" data-loading-text="Loading..."><small>I can&#39;t access my account</small></a>
         </div>
     </div>
     <div class="js-auth_inputs js-auth_verification display_none">
-        <p class="small text-center margin-top-5">Wrong code generated?<br>Solution is <a href="faq.html#q19">here</a>.</p>
+        <p class="small text-center margin-top-5">Wrong code generated?<br>Solution is <a href="faq.php#q19">here</a>.</p>
     </div>
     <div class="js-auth_inputs js-auth_login">
         <div class="sign-in-divider">
@@ -325,7 +96,7 @@ $('.j-change-lang').click(changeLang);
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?state=&amp;scope=email&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;response_type=code&amp;client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com">
+            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;response_type=code&amp;client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;state=&amp;scope=email">
                 <span class="fa-stack icon-social icon-gp">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -570,17 +341,135 @@ var fullDateString = new Date();
                         <div class="panel-body">
 
                             
+<style>
+#ppBody {
+    font-size: 11pt;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
 
-<h3 class="page-head">Disclaimer</h3>
+#ppHeader {
+    font-family: verdana;
+    font-size: 21pt;
+    width: 100%;
+    margin: 0 auto;
+}
+</style>
 
-<div class="disclaimer-page"><p>The website <a href="index2.html">https://hashing24.com/</a> (hereinafter, referred to as the “Web site”) provides Bitcoin mining services. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the services of the Website. Should you make a decision to act or not act you should do your own research and due diligence. In no way are the owners of the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website.</p>
-<p>The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them to our Support.</p>
-<p>Using of Bitcoin mining services provided by Website should be done with care and proper financial consultation only, and even after that, with spare money only -if at all.</p>
-<p>Before deciding to invest in Bitcoin mining you should carefully consider your investment objectives, level of experience, and risk appetite. Please do your own research and due diligence on the services provided by Website. Past performance is not indicative of future possible returns or results.</p>
-<p>The investment in Bitcoin mining can lead to loss of money over short or even long periods. The investors in Bitcoin mining should expect prices to have large range fluctuations. The information published on the Web site can’t guarantee that the investors in Bitcoin mining would not lose money.</p>
-<p>The Website is provided on an “as is” basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website.</p>
+<h3 class="page-head">Privacy Policy</h3>
+
+<div id='ppBody'>
+    <div class='innerText'>This privacy policy has been compiled to better serve those who are concerned with how their &#39;Personally identifiable information&#39; (PII) is being used online. PII is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.<br>
+    </div>
+    <br>
+    <div class='grayText'>
+        <strong>What personal information do we collect from the people that visit our blog, website or app?</strong>
+    </div>
+    <br />
+    <div class='innerText'>When ordering or registering on our site, as appropriate, you may be asked to enter your email address or other details to help you with your experience.</div>
+    <br>
+    <div class='grayText'>
+        <strong>When do we collect information?</strong>
+    </div>
+    <br />
+    <div class='innerText'>We collect information from you when you register on our site or enter information on our site.</div>
+    <br>
+    <div class='grayText'>
+        <strong>How do we use your information? </strong>
+    </div>
+    <br />
+    <div class='innerText'>We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:</div>
+
+    <ul>
+    <li>To quickly process your transactions.</li>
+    <li>To send periodic emails regarding your order or other products and services.</li>
+    </ul>
+
+    <div class='grayText'>
+        <strong>How do we protect visitor information?</strong>
+    </div>
+    <br />
+    <div class='innerText'>We only provide articles and information. We never ask for credit card numbers.</div>
+    <div class='innerText'>Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.</div>
+    <br>
+    <div class='innerText'>We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.</div>
+    <br>
+    <div class='innerText'>All transactions are processed through a gateway provider and are not stored or processed on our servers.</div>
+    <br>
+    <div class='grayText'>
+        <strong>Do we use &#39;cookies&#39;?</strong>
+    </div>
+    <br />
+    <div class='innerText'>Yes. Cookies are small files that a site or its service provider transfers to your computer&#39;s hard drive through your Web browser (if you allow) that enables the site&#39;s or service provider&#39;s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</div>
+    <div class='innerText'>
+        <br>
+        <strong>We use cookies to:</strong>
+    </div>
+
+    <ul>
+      <li>Help remember and process the items in the shopping cart.</li>
+      <li>Understand and save user&#39;s preferences for future visits.</li>
+      <li>Keep track of advertisements.</li>
+      <li>Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.</li>
+    </ul>
+
+    <div class='innerText'>You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser&#39;s Help menu to learn the correct way to modify your cookies.<br>
+    </div>
+    <br>
+    <div class='innerText'>If you disable cookies off, some features will be disabled It won&#39;t affect the user&#39;s experience that make your site experience more efficient and some of our services will not function properly.</div>
+    <br>
+    <div class='innerText'>However, you can still place orders .</div>
+    <br>
+    <div class='grayText'>
+        <strong>Third-party disclosure</strong>
+    </div>
+    <br />
+    <div class='innerText'>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it&#39;s release is appropriate to comply with the law, enforce our site policies, or protect ours or others&#39; rights, property or safety.<br><br>
+        However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+    </div>
+    <br>
+    <div class='grayText'>
+        <strong>Third-party links</strong>
+    </div>
+    <br />
+    <div class='innerText'>We do not include or offer third-party products or services on our website.</div>
+    <br>
+    <div class='innerText'>Our Privacy Policy link includes the word &#39;Privacy&#39; and can be easily be found on the home page or as a minimum on the first significant page after entering our website.</div>
+    <div class='innerText'>Users will be notified of any privacy policy changes on our Privacy Policy Page.</div>
+    <div class='innerText'>Users are able to change their personal information by logging in to their account</div>
+    <div class='innerText'>
+        <br>
+        <strong>How does our site handle do not track signals?</strong>
+    </div>
+    <div class='innerText'>We honor do not track signals and do not track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.</div>
+    <br>
+    <div class='innerText'>
+        <strong>We collect your email address in order to:</strong>
+    </div>
+    <ul>
+      <li>Send information, respond to inquiries, and/or other requests or questions.</li>
+      <li>Process orders and to send information and updates pertaining to orders.</li>
+      <li>We may also send you additional information related to your product and/or service.</li>
+      <li>Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.</li>
+    </ul>
+
+    <div class='innerText'>
+        <strong>If at any time you would like to unsubscribe from receiving future emails, you can follow the instructions at the bottom of each email.</strong>
+    </div>
+    We will promptly remove you from the correspondence.
 </div>
 
+<br>
+<br>
+
+<div class='blueText'>
+    <strong>Contacting Us</strong>
+</div>
+<br />
+<div class='innerText'>
+    If there are any questions regarding this privacy policy you may contact us using <a href='support.php'>this form</a>.
+</div>
 
                         </div>
                     </div>
@@ -615,7 +504,7 @@ var fullDateString = new Date();
         </div>
         <div class="modal-footer">
             <div class="text-left">
-            Find detailed information on how the cost is covered and calculated in our terms of use <a href="terms.html">here</a>.
+            Find detailed information on how the cost is covered and calculated in our terms of use <a href="terms.php">here</a>.
             <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -625,53 +514,7 @@ var fullDateString = new Date();
 
 
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-                <div class="row">
-                    <div class="col-sm-4 footer-col">
-                        <p><a href="index2.html">Home</a><p>
-                        <p><a href="about.html">About Us</a></p>
-                        <p><a href="howitworks.html">How it Works</a></p>
-                        <p><a href="tariffs.html">Prices</a></p>
-                    </div>
-                    <div class="col-sm-4 footer-col">
-                        <p><a href="whyus.html">Why Hashing24</a></p>
-                        <p><a href="register.html">Register an Account</a></p>
-                        <p><a href="partners.html">Partners</a></p>
-                        <p><a href="support.html">Support</a></p>
-                    </div>
-                    <div class="col-sm-4 footer-col">
-
-                        <p><a href="terms.html">Terms &amp; Conditions</a></p>
-                        <p><a href="privacy.html">Privacy Policy</a></p>
-                        <p><a href="aml_kyc_policy.html">AML/KYC Policy</a></p>
-                        <p><a href="disclaimer.html">Disclaimer</a></p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com/hashing24/" class="footer-fb" target="_blank"><img src="i/fb29.png" alt="Facebook Hashing24 Page" /></a>
-                    <img alt="Comodo" class="icon-comodo" src="i/icon_comodo.png"/>
-                </div>
-            </div>
-        </div>
-        <div class="payments-block text-center">
-            <img src="i/payments/visa_verified.png" alt="Visa Verified">
-            <img src="i/payments/visa.png" alt="Visa">
-            <img src="i/payments/visa_electron.png" alt="Visa Electron">
-            <img src="i/payments/mastercard_secure.png" alt="Mastercard Secure">
-            <img src="i/payments/mastercard.png" alt="Mastercard">
-            <img src="i/payments/maestro.png" alt="Maestro">
-        </div>
-        <div style="display: none;"><a target="_blank" rel="nofollow" href="https://www.couponchief.com/hashing24">Hashing24.com Coupons</a></div>
-        <p class="margin-top-15 copy text-center"><small>Hashing24 does not provide services for the USA residents.</small></p>
-        <p class="margin-top-15 copy text-center"><small>© 2015&mdash;2017 NEWSTAR L.P. (UK). All rights reserved.</small></p>
-    </div>
-</footer>
+<?php include_once 'footer.php';?>
 
         <div class='notifications top-right'></div>
         <script>
@@ -730,5 +573,5 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc
 
     </body>
 
-<!-- Mirrored from hashing24.com/disclaimer by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:16 GMT -->
+<!-- Mirrored from hashing24.com/privacy by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:15 GMT -->
 </html>

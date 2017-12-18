@@ -89,13 +89,13 @@
         </div>
         <div class="sign-in-social">sign in with social account</div>
         <div class="sign-in-social-icons">
-            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback&amp;response_type=code&amp;client_id=1947287212159869&amp;state=&amp;scope=email">
+            <a class="sign-in-social-icon" href="https://graph.facebook.com/oauth/authorize?response_type=code&amp;client_id=1947287212159869&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Ffacebook%2Fcallback&amp;scope=email&amp;state=">
                 <span class="fa-stack icon-social icon-fb">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;scope=email&amp;state=">
+            <a class="sign-in-social-icon" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;client_id=943004047393-oqqtc94hmntmej4ivvr25anb57j17lmc.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fhashing24.com%2Foauth2%2Fgoogle%2Fcallback&amp;scope=email&amp;state=">
                 <span class="fa-stack icon-social icon-gp">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -332,188 +332,8 @@ var fullDateString = new Date();
 
 
                 
-<div class="top-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="top-banner-title">Start Bitcoin Mining with Industry Leaders</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7">
-                <div class="top-banner-subtitle">We make industrial mining accessible for everyone. You get access to the newest and most advanced technologies in the industry, provided by the leading companies.</div>
-            </div>
-        </div>
-        <a href="tariffs.php" class="btn btn-warning top-banner-button margin-right-25">Start mining now</a>
-        <a href="#" class="btn btn-transparent top-banner-button" data-toggle="modal" data-target="#watchVideoModal">
-            <span class="glyphicon glyphicon-play-circle"></span>
-        Watch video
-        </a>
-    </div>
-</div>
 
-<div class="modal fade" id="watchVideoModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg?enablejsapi=1" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>Three Easy Steps to Start Bitcoin Mining</h2>
-            </div>
-        </div>
-        <div class="row margin-bottom-30 margin-top-25">
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_2.png" alt="Hashing24 - REGISTER"></div>
-                <h4 class="text-center step-title">
-                    <span class="step_badge">1</span>
-                    <a href="register.php">REGISTER</a>
-                </h4>
-                <div class="step-info">Don’t worry, it will take only a few<br> minutes to complete registration.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_1.png" alt="Choose"></div>
-                <h4 class="text-center step-title"><span class="step_badge">2</span> <a href="tariffs.php">Choose</a> your plan</h4>
-                <div class="step-info">Simply select your power<br> plan and pay for it.</div>
-            </div>
-            <div class="col-sm-4">
-                <div class="step_image_wrapper"><img src="i/howitworks_step_3.png" alt="Hashing24 - Receive bitcoin"></div>
-                <h4 class="text-center step-title"><span class="step_badge">3</span> Receive bitcoin</h4>
-                <div class="step-info">Now you all set up and ready to<br> collect freshly baked bitcoins.</div>
-            </div>
-        </div>
-            <div class="margin-top-40 text-center">
-                <a href="tariffs.php" class="btn btn-transparent-orange top-banner-button">Start now</a>
-            </div>
-    </div>
-</div>
-
-<div class="why-profitable">
-    <div class="container">
-        <div class="why-profitable-inner clearfix">
-        WHY BITCOIN MINING IS profitable ?
-            <a href="howitworks.php" class="btn btn-transparent w150 pull-right margin-top-8">Find out</a>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="video-container margin-top-40">
-                    <iframe src="https://www.youtube.com/embed/HWa6Y7G8Ksg" class="no-frameborder" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h1>Who we are and what we offer?</h1>
-                <p class="default-p f18">
-                    We the video provides turnkey renting solutions from the largest bitcoin mining data centers.
-                </p>
-                <ul class="top-info-wrapper-list">
-                    <li>Official reseller of industry leading companies</li>
-                    <li>Data centers in Iceland and Georgia</li>
-                    <li>The newest ASIC chips</li>
-                    <li>Air and immersion cooling technology</li>
-                    <li>Ultimate performance at low cost</li>
-                    <li>100% uptime guarantee</li>
-                    <li>Payout is based on overall network hashrate</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gray-wrapper default-wrapper building-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5">
-                <h1>Maximum Efficiency</h1>
-                <p class="default-p">
-                    Efficiency is what drives the margins in Bitcoin transaction processing. As more miners compete to find a block the difficulty of the network rises respectively. When the network reaches the saturation point, the miners who are most efficient will make the most profit. The modern ASIC chips from BitFury deliver the maximum performance and efficiency possible.
-                </p>
-                <a href="tariffs.php" class="btn btn-warning top-banner-button margin-top-40">Start mining now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="default-wrapper text-center">
-    <div class="container">
-        <div class="row">
-    <div class="col-md-offset-1 col-md-10">
-        <h1 class="tall">Hashing24 was made by professionals for individuals who want to get involved in bitcoin mining</h1>
-        <p class="default-p">We believe that everyone should benefit from the mining and be able to have access the newest technologies and large scale industrial data centers from your laptop or mobile phone.</p>
-    </div>
-</div>
-
-
-<a href="register.php" class="btn btn-warning top-banner-button margin-top-40">Join Us</a>
-
-    </div>
-</div>
-
-<div class="gray-dark-wrapper default-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10">
-                <div class="main-promoblock-image pull-left"><img src="i/slide2.png" alt="Hashing24 - Let&#39;s work together!"></div>
-                <h1 class="text-uppercase font-bold">Let&#39;s work together!</h1>
-                <p class="default-p">We are open for partnership to all mining companies who meet our requirements. If you are interested to sell your hosting capacities for mining through Hashing24 platform, please <a href="partners.html">contact us</a>.</p>
-                <a href="support.php" class="btn btn-transparent-black top-banner-button margin-top-20">Contact us</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-<div class="default-wrapper">
-    <div class="container">
-        <h1 class="text-center">Representative offices</h1>
-<div class="row margin-top-55 margin-bottom-15">
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_scc81e.png?2" class="pull-left margin-right-20 office-photo" alt="Hashing24 - Scotland, UK">
-            <div class="office-country">Scotland, UK <img src="i/new_pages/flag_scc81e.png?2" alt="Scotland, UK"></div>
-            <div class="office-address">272 Bath Street, Glasgow, G2 4JR</div>
-            <div class="office-phone">+44 141 536 0163</div>
-            <div class="office-email"><a href="mailto:headquarter@hashing24.com">headquarter@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_thc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Thailand">
-            <div class="office-country">Thailand <img src="i/new_pages/flag_thc81e.png?2" alt="Thailand"></div>
-            <div class="office-phone">+66 60 002 4027</div>
-            <div class="office-email"><a href="mailto:thailand@hashing24.com">thailand@hashing24.com</a></div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="clearfix margin-bottom-15 office-block">
-            <img src="i/new_pages/office_ukc81e.png?2" class="pull-left margin-right-25 office-photo" alt="Hashing24 - Ukraine">
-            <div class="office-country">Ukraine <img src="i/new_pages/flag_ukc81e.png?2" alt="Ukraine"></div>
-            <div class="office-phone">+380 44 290 8495</div>
-            <div class="office-email"><a href="mailto:ukraine@hashing24.com">ukraine@hashing24.com</a></div>
-        </div>
-    </div>
-</div>
-
-    </div>
-</div>
-!-->
-
-                <div class=""></div>
+                <div class="bordered-top"></div>
                 <div class="container">
                         <div class="forced-client-menu">
                         
@@ -524,61 +344,152 @@ var fullDateString = new Date();
 
 
 
-<script>
-$('#watchVideoModal').on('show.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
-});
-$('#watchVideoModal').on('hide.bs.modal', function (e) {
-    $('#watchVideoModal iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
-})
-</script>
+
+
+
 
                 </div>
 
-                	
-<div class="articles">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 article-preview article1">
+                <div class="howitworks-block-gray">
+    <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="whyus.php"><h4>Why use Hashing24?</h4></a>
-            <p>Hashing24 is the best option<br/>available for users<br/>who want to mine bitcoin ...
-            <a href="whyus.php">more</a>
-            </p>
+            <div class="col-md-8">
+                <h1 class="margin-bottom-15">What is it and how does it work?</h1>
+                <p class="f18"><b>Hashing24 is the easiest and most convenient way to mine new bitcoins.</b> <br>Bitcoin is the new era of cryptocurrency and its value has grown tremendously over the last few years. There's never been a better time to join billion dollars industry!</p>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-4 article-preview article3">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="howitworks.php"><h4>How does Hashing24 work?</h4></a>
-            <p>Bitcoin mining has changed.<br />Today, for someone to mine and<br />get the same success ...
-            <a href="howitworks.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 article-preview article4">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="center_article_block">
-            <a class="article-title" href="index.php"><h4>Affiliate program</h4></a>
-            <p>Do you have a website whose visitors<br />are interested in bitcoin? If so, then<br />you can start earning ...
-            <a href="index.php">more</a>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
-
+<div class="page-block-wrapper text-center">
+    <div class="container">
+        <h2>Here we will explain how this process actually works:</h2>
+        <div class="howitworks-steps">
+            <div class="row">
+                <div class="col-md-4 howitworks-step howitworks-step-arrow-right">
+                    <div class="howitworks-step-img">
+                        <div class="animation-box a-hiw-1">
+                            <img src="i/new_pages/howitworks_step_1c81e.png?2">
+                            <img src="i/new_pages/cursor.png" class="a-hiw-1_cursor">
+                            <div class="a-hiw-1_button">Register</div>
+                        </div>
+                    </div>
+                    <div class="howitworks-step-info">
+                        <div class="howitworks-step-number">1</div>
+                        <div class="howitworks-step-title">You register on Hashing24</div>
+                        <div class="howitworks-step-subtitle">It takes only 2 minutes</div>
+                    </div>
+                </div>
+                <div class="col-md-4 howitworks-step howitworks-step-arrow-right">
+                    <div class="howitworks-step-img">
+                        <div class="animation-box a-hiw-2">
+                            <img src="i/new_pages/howitworks_step_2c81e.png?2">
+                            <img src="i/new_pages/howitworks_step_2_arrow.png" class="a-hiw-2_arrow">
+                            <div class="a-hiw-2_label">GH/s</div>
+                        </div>
+                    </div>
+                    <div class="howitworks-step-info">
+                        <div class="howitworks-step-number">2</div>
+                        <div class="howitworks-step-title">Choose hashpower</div>
+                        <div class="howitworks-step-subtitle">More power, more bitcoins</div>
+                    </div>
+                </div>
+                <div class="col-md-4 howitworks-step howitworks-step-arrow-right">
+                    <div class="howitworks-step-img">
+                        <div class="animation-box a-hiw-3">
+                            <img src="i/new_pages/howitworks_step_3c81e.png?2" class="a-hiw-3_cart">
+                            <img src="i/new_pages/howitworks_step_3_doc.png" class="a-hiw-3_doc">
+                            <div class="a-hiw-2_label">GH/s</div>
+                        </div>
+                    </div>
+                    <div class="howitworks-step-info">
+                        <div class="howitworks-step-number">3</div>
+                        <div class="howitworks-step-title">You pay</div>
+                        <div class="howitworks-step-subtitle">for your new contract</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 howitworks-step howitworks-step-arrow-left">
+                    <div class="howitworks-step-img">
+                        <div class="animation-box a-hiw-4">
+                            <img src="i/new_pages/howitworks_step_4c81e.png?2">
+                            <img src="i/new_pages/howitworks_step_4_ping.png" class="a-hiw-4_ping">
+                            <img src="i/new_pages/howitworks_step_4_light.png" class="a-hiw-4_light">
+                        </div>
+                    </div>
+                    <div class="howitworks-step-info">
+                        <div class="howitworks-step-number">4</div>
+                        <div class="howitworks-step-title">We send your order</div>
+                        <div class="howitworks-step-subtitle">to huge BitFury mining data centers located in Europe</div>
+                    </div>
+                </div>
+                <div class="col-md-4 howitworks-step howitworks-step-arrow-left">
+                    <div class="howitworks-step-img">
+                        <div class="animation-box a-hiw-5">
+                            <img src="i/new_pages/howitworks_step_5c81e.png?2">
+                            <img src="i/new_pages/howitworks_step_5_coins.png" class="a-hiw-5_coins">
+                        </div>
+                    </div>
+                    <div class="howitworks-step-info">
+                        <div class="howitworks-step-number">5</div>
+                        <div class="howitworks-step-title">The mining process begins</div>
+                        <div class="howitworks-step-subtitle">on high-end equipment with 100% uptime</div>
+                    </div>
+                </div>
+                <div class="col-md-4 howitworks-step howitworks-step-arrow-left">
+                    <div class="howitworks-step-img">
+                        <div class="animation-box a-hiw-6">
+                            <img src="i/new_pages/howitworks_step_6c81e.png?2" class="a-hiw-6_wallet">
+                            <img src="i/new_pages/howitworks_step_6_money.png" class="a-hiw-6_money">
+                        </div>
+                    </div>
+                    <div class="howitworks-step-info">
+                        <div class="howitworks-step-number">6</div>
+                        <div class="howitworks-step-title">You receive daily your newly mined bitcoins</div>
+                        <div class="howitworks-step-subtitle">that are available for withdrawal the same day.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="tariffs.php" class="btn btn-lg btn-success top-banner-button">Start mining now</a>
+        </div>
+    </div>
+</div>
+<div class="howitworks-block-orange">
+    <div class="container">
+        Why you should trust and work with us?
+    </div>
+</div>
+<div class="page-block-wrapper text-center">
+    <div class="container">
+        <div class="row howitworks-whys">
+            <div class="col-md-15">
+                <img src="i/new_pages/howitworks_why_1.png">
+                <div class="howitworks-why-title">Stable Hashpower and 100% Uptime</div>
+            </div>
+            <div class="col-md-15">
+                <img src="i/new_pages/howitworks_why_2.png">
+                <div class="howitworks-why-title">Mining with BitFury - Industry Leader</div>
+            </div>
+            <div class="col-md-15">
+                <img src="i/new_pages/howitworks_why_3.png">
+                <div class="howitworks-why-title">Instant Deposit of Coins to Your Account</div>
+            </div>
+            <div class="col-md-15">
+                <img src="i/new_pages/howitworks_why_4.png">
+                <div class="howitworks-why-title">Legit Mining - All Coins are New</div>
+            </div>
+            <div class="col-md-15">
+                <img src="i/new_pages/howitworks_why_5.png">
+                <div class="howitworks-why-title">Maximum Efficiency with High-End Equipment</div>
+            </div>
+        </div>
+        <div>
+            <a href="tariffs.php" class="btn btn-lg btn-warning top-banner-button">Start mining now</a>
+        </div>
+    </div>
+</div>
 
             </div>
             
@@ -676,5 +587,5 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc
 
     </body>
 
-<!-- Mirrored from hashing24.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:47:43 GMT -->
+<!-- Mirrored from hashing24.com/howitworks by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 16:48:07 GMT -->
 </html>
