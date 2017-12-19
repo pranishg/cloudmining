@@ -614,61 +614,82 @@ $('#ex15').change(function(){
    var b=parseFloat(a)*parseFloat($('#apival').val().trim());
 //   alert(b);
    $('.j-custom-tariff-price-span').text(b.toFixed(2));
-   
-   if(d=="20")
-   {
+  
+//        for(var i=0;i<=1000;i++)
+//        {
+//alert(d.substring(0,d.length - 1));
+
+          var strlen=d.substring(0,d.length - 1); 
+//          alert(strlen);
+          if(strlen=="1")
+          {}
+          else{
+              var maintainceval=  parseFloat(0.003)*strlen;
+              $('#maintaince').text("$"+maintainceval.toFixed(3));  
+          }
+//        } 
        
-     var maintainceval=  parseFloat(0.03)*2;
-   $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="30")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*3;
-   $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="40")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*4;
-  $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="50")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*5;
-   $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="60")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*6;
-   $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="70")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*7;
-   $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="80")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*8;
- $('#maintaince').text("$"+maintainceval);
-   }
-   if(d=="90")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*9;
-   $('#maintaince').text("$"+maintainceval);
-   }
-    if(d=="100")
-   {
-       
-     var maintainceval=  parseFloat(0.03)*10;
- $('#maintaince').text("$"+maintainceval);
-   }
+//  
+//    if(d=="10")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003);
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="20")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*2;
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="30")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*3;
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="40")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*4;
+//  $('#maintaince').text("$"+maintainceval);
+//   }
+//   if(d=="50")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*5;
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="60")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*6;
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="70")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*7;
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="80")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*8;
+// $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//   if(d=="90")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*9;
+//   $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
+//    if(d=="100")
+//   {
+//       
+//     var maintainceval=  parseFloat(0.003)*10;
+// $('#maintaince').text("$"+maintainceval.toFixed(2));
+//   }
 });
 var minHosts = 1,
     convertMultiplier = 1000,
