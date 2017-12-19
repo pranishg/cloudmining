@@ -461,15 +461,15 @@ $str=str_replace(",","","$var");
                 </tr>
                 <tr>
                     <td>Mining</td>
-                    <td><span class="j_mining-day"></span> BTC</td>
-                    <td><span class="j_mining-week"></span> BTC</td>
-                    <td><span class="j_mining-month"></span> BTC</td>
+                    <td><span class="j_mining-day"></span> 0.00001717 BTC</td>
+                    <td><span class="j_mining-week"></span> 0.00012021 BTC</td>
+                    <td><span class="j_mining-month"></span> 0.00053236 BTC</td>
                 </tr>
                 <tr>
                     <td>Maintenance</td>
-                    <td><span class="j_maintenance-usd-day"></span> USD / <span class="j_maintenance-btc-day"></span> BTC</td>
-                    <td><span class="j_maintenance-usd-week"></span> USD / <span class="j_maintenance-btc-week"></span> BTC</td>
-                    <td><span class="j_maintenance-usd-month"></span> USD / <span class="j_maintenance-btc-month"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-day"></span> 0.003 USD / <span class="j_maintenance-btc-day"></span><?php echo ($str*0.003);?> BTC</td>
+                    <td><span class="j_maintenance-usd-week"></span> 0.021 USD / <span class="j_maintenance-btc-week"></span> <?php echo ($str*0.021);?>BTC</td>
+                    <td><span class="j_maintenance-usd-month"></span> 0.09 USD / <span class="j_maintenance-btc-month"></span> <?php echo ($str*0.09);?> BTC</td>
                 </tr>
                 <tr>
                     <td>Net Income</td>
