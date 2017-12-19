@@ -23,6 +23,9 @@ bitcoin, blockchain, mining, bitfury, bitfury.com, hashing24, hashing24.com, how
         <link href="css/animationsc55e.css?rev=97" rel="stylesheet" />
         <link href="css/printc55e.css?rev=97" rel="stylesheet" />
         <link href="css/tmpc55e.css?rev=97" rel="stylesheet" />
+        <link href="css/bootstrap-slider.min.css" rel="stylesheet" />
+        <!--<link href="css/slider.css" rel="stylesheet" />-->
+        <!--<link href="css/pips.css" rel="stylesheet" />-->
 
         
 
@@ -44,6 +47,7 @@ bitcoin, blockchain, mining, bitfury, bitfury.com, hashing24, hashing24.com, how
         <script src="js/clipboard.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/bignumber.min.js"></script>
+        <script src="js/bootstrap-slider.js"></script>
         <script src="../www.google.com/recaptcha/api2633.js?onload=onloadRCCallback&amp;render=explicit&amp;hl=en" async defer></script>
 
         <script>
@@ -190,7 +194,7 @@ $('.j-change-lang').click(changeLang);
                 <li class="margin-right-12"><a href="faq.php">FAQ</a></li>
                 <li class="margin-right-12"><a href="about.php">About Us</a></li>
                 <li class="margin-right-12"><a href="howitworks.php">How it Works</a></li>
-                <li class="margin-right-12"><a href="tariffs.php">Prices</a></li>
+                <li class="margin-right-12"><a href="tariffs.php">Plans</a></li>
 
                 <li class="margin-right-12"><a href="calculator.php">Calculator</a></li>
 

@@ -351,9 +351,41 @@ var fullDateString = new Date();
             <div class="col-md-5">
                 <div class="bc-label">One-time cost</div>
                 <div class="bc-info-block">
-                    <div currency="BTC" class="bc-cost-option text-center hidden j_bc-cost-label"></div>
-                    <div currency="USD" class="bc-cost-option text-center hidden j_bc-cost-label"></div>
-                    <div currency="EUR" class="bc-cost-option text-center hidden j_bc-cost-label"></div>
+                    <div currency="BTC" class="">BTC                                  <?php
+			$f="https://api.coindesk.com/v1/bpi/currentprice.json";
+
+			$file=file_get_contents($f);
+			
+			if($file==""){
+	print("error:cant get file");
+	return;
+}
+$myjson = json_decode($file);
+
+$var=$myjson->bpi->USD->rate; 
+$str=str_replace(",","","$var");
+ echo $float = (double)$str*1500;
+//echo $float*1500;
+$usd=$var;
+?></div>
+                    <div currency="USD" class="">USD $1500</div>
+                    <div currency="EUR" class="">EUR                                  <?php
+			$f="https://api.coindesk.com/v1/bpi/currentprice.json";
+
+			$file=file_get_contents($f);
+			
+			if($file==""){
+	print("error:cant get file");
+	return;
+}
+$myjson = json_decode($file);
+
+$var=$myjson->bpi->EUR->rate; 
+$str=str_replace(",","","$var");
+ echo $float = (double)$str*1500;
+//echo $float*1500;
+
+?></div>
                 </div>
                 <div class="bc-info-block bc-info-block-first">
                     <div class="bc-cost-option">Block reward</div>
@@ -361,48 +393,102 @@ var fullDateString = new Date();
                 </div>
                 <div class="bc-info-block bc-info-block-last">
                     <div class="bc-cost-option">Current difficulty</div>
-                    <div class="bc-cost-option text-center">1 590 896 927 258</div>
+                    <div class="bc-cost-option text-center"><?php
+  $text = file_get_contents("https://blockchain.info/q/getdifficulty");
+  echo $text;
+  ?> </div>
                 </div>
                 <div class="bc-info-block bc-info-block-first">
                     <div class="bc-cost-option">Daily maintenance</div>
-                    <div class="bc-cost-option text-center"><span class="j_maintenance">&mdash;</span> USD</div>
+                    <div class="bc-cost-option text-center"><span class=""></span>$5 USD</div>
                 </div>
-                <div class="bc-info-block bc-info-block-last">
+<!--                <div class="bc-info-block bc-info-block-last">
                     <div class="bc-cost-option">Current price BTC/USD</div>
                     <div class="bc-cost-option text-center">15453.7263 USD</div>
-                </div>
+                </div>-->
                 <div class="bc-tip">* Calculations are just for information purposes and can differ from real results</div>
             </div>
             <div class="col-md-4">
-                <div class="bc-label">Power</div>
+                <div class="bc-label">Product</div>
                 <div class="bc-input-wrapper">
-                    <input name="bc-power" class="bc-input" value="100 GH/s">
-                    <div class="bc-input-steps">
+                    
+                    
+                                                     
+     <select class="form-control" id="product"  name="product">
+    <option value="">==Select==</option>
+    <option value="1" >Dedicated ANT Miner s9</option>
+    <option value="0" >Shared Ant Miner s9</option>
+   
+  </select>
+
+
+                    
+                    <!--<input name="bc-power" class="bc-input" value="100 GH/s">-->
+<!--                    <div class="bc-input-steps">
                         <div class="bc-input-step bc-input-step-up" step="100"></div>
                         <div class="bc-input-step bc-input-step-down" step="-100"></div>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="bc-label">Change Difficulty*</div>
+                <div class="bc-label">Hash Power*</div>
                 <div class="bc-input-wrapper">
-                    <input name="bc-difficulty" class="bc-input" value="0.00%">
+                           <input class="form-control"   type="text" id="productval" required name="productval" >
+                </div>
+                <div class="bc-label">Bitcoin Price*</div>
+                <div class="bc-input-wrapper">
+                     <input class="form-control"   type="text" id="bitprice" required name="bitprice" value="<?php echo $usd;?>" >
+<!--                    <input name="bc-rate" class="bc-input" value="0.00%">
                     <div class="bc-input-steps">
                         <div class="bc-input-step bc-input-step-up" step="10"></div>
                         <div class="bc-input-step bc-input-step-down" step="-10"></div>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="bc-label">Change Price*</div>
-                <div class="bc-input-wrapper">
-                    <input name="bc-rate" class="bc-input" value="0.00%">
-                    <div class="bc-input-steps">
-                        <div class="bc-input-step bc-input-step-up" step="10"></div>
-                        <div class="bc-input-step bc-input-step-down" step="-10"></div>
-                    </div>
-                </div>
-                <a href="#" class="bc-button j_go-calc">Calculate</a>
+                <button class="bc-button j_go-calc" id="butproduct">Calculate</button>
+                <!--<a href="#" class="bc-button j_go-calc">Calculate</a>-->
             </div>
         </div>
     </div>
 </div>
+                
+                 <div class="container j_result-current" id="btprd" hidden>
+        <div class="bc-results-header">Current Difficulty <span class="j_difficulty"></span></div>
+        <div class="bc-results-table-wrapper">
+            <table class="bc-results-table">
+                <tr>
+                    <th></th>
+                    <th>Day</th>
+                    <th>Week</th>
+                    <th>Month</th>
+                </tr>
+                <tr>
+                    <td>Mining</td>
+                    <td><span class="j_mining-day"></span> BTC</td>
+                    <td><span class="j_mining-week"></span> BTC</td>
+                    <td><span class="j_mining-month"></span> BTC</td>
+                </tr>
+                <tr>
+                    <td>Maintenance</td>
+                    <td><span class="j_maintenance-usd-day"></span> USD / <span class="j_maintenance-btc-day"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-week"></span> USD / <span class="j_maintenance-btc-week"></span> BTC</td>
+                    <td><span class="j_maintenance-usd-month"></span> USD / <span class="j_maintenance-btc-month"></span> BTC</td>
+                </tr>
+                <tr>
+                    <td>Net Income</td>
+                    <td><b><span class="j_income-day-usd"></span> USD</b> / <span class="j_income-day"></span> BTC</td>
+                    <td><b><span class="j_income-week-usd"></span> USD</b> / <span class="j_income-week"></span> BTC</td>
+                    <td><b><span class="j_income-month-usd"></span> USD</b> / <span class="j_income-month"></span> BTC</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bc-results-divider"></div>
+                     <div class="container">
+        <p><b>Disclaimers of Liability:</b> The expected Bitcoin earnings are calculated based on the values entered and do not consider difficulty, exchange rate fluctuations, stale/reject/orphan rate, etc. These and other factors change every day/every week and can have effects on the expected earnings. Hashing24 will not be liable for any losses or damages caused by your use or misuse of this calculator.</p>
+        <div class="text-center margin-top-40" style="margin-bottom: 10px;">
+            <a href="tariffs.php" class="btn btn-lg btn-success w200">Start Mining</a>
+        </div>
+    </div>
+    </div>
+      
+                
 <div class="bc-loading hidden"></div>
 <div class="bc-results hidden">
     <div class="container j_result-current">
@@ -560,7 +646,7 @@ $('.j_go-calc').on('click', function(e){
     if (!isRequesting) {
         isRequesting = true;
         $('.bc-loading').removeClass('hidden');
-        $('.bc-results').addClass('hidden');
+//        $('.bc-results').addClass('hidden');
         $.ajax({
             type: "POST",
             url: '/calculator',
@@ -622,6 +708,27 @@ $('.j_go-calc').on('click', function(e){
             $('.bc-loading').addClass('hidden');
         });
     }
+});
+$('#product').change(function(){
+    if($(this).val().trim()=='1')
+    {
+       
+       $('#productval').val('14000 GH/S');
+       $('#productval').attr('disabled',true);
+    }
+    
+    if($(this).val().trim()=='0')
+    {
+        $('#productval').val("");
+        $('#productval').attr('disabled',false);
+    }
+    
+    
+});
+
+$('#butproduct').click(function(){
+    
+   $('#btprd').show(); 
 });
 </script>
 

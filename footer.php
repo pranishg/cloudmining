@@ -11,7 +11,7 @@
                         <p><a href="index.php">Home</a><p>
                         <p><a href="about.php">About Us</a></p>
                         <p><a href="howitworks.php">How it Works</a></p>
-                        <p><a href="tariffs.php">Prices</a></p>
+                        <p><a href="tariffs.php">Plans</a></p>
                     </div>
                     <div class="col-sm-4 footer-col">
                        <!-- <p><a href="whyus.php">Why Hashing24</a></p>-->
@@ -37,12 +37,12 @@
             </div>
         </div>
         <div class="payments-block text-center">
-           <img src="i/payments/mastercard_secure.png" alt="Mastercard Secure" hidden>
+<!--           <img src="i/payments/mastercard_secure.png" alt="Mastercard Secure" hidden>
 			<img src="i/payments/mastercard.png" alt="Mastercard" hidden>
-			 <img src="bitcoin-logo-DDAEEA68FA-seeklogo.com.png" alt="Bitcoin" width="45px">
-            <img src="ETHEREUM-ICON_Black_small.png" alt="ehter" width="45px" style="background:white">
-            <img src="1 zna2Zw5JDDnP499Zo3WBQg.png" alt="Dash logo" width="45px">
-            <img src="i/payments/maestro.png" alt="Maestro" hidden>
+			 <img src="bitcoin-logo-DDAEEA68FA-seeklogo.com.png" alt="Bitcoin" width="45px">-->
+                         <img src="RSS bitcoin accepyed here.jpg" alt="ehter" width="100px" >
+<!--            <img src="1 zna2Zw5JDDnP499Zo3WBQg.png" alt="Dash logo" width="45px">
+            <img src="i/payments/maestro.png" alt="Maestro" hidden>-->
         </div>
         <div style="display: none;"><a target="_blank" rel="nofollow" href="https://www.couponchief.com/hashing24">Hashing24.com Coupons</a></div>
         <p class="margin-top-15 copy text-center"><small>We donot Provide Services for US Residents.</small></p>

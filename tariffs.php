@@ -312,8 +312,27 @@ var user_balances = new Array();
 $(document).ready(function() {
 
     $.cookie("tm", (0-(new Date()).getTimezoneOffset()), { expires : 365 });
+    var bitcoin=parseFloat(15)*parseFloat($('#apival').val().trim());
+//   alert(b);
+   $('.j-custom-tariff-price-span').text(bitcoin.toFixed(2));
+$("#ex15").slider({
+	
+        min: 10,
+	max: 1000,
+	scale: 'logarithmic',
+	step: 10
+        
 });
 
+// Without JQuery
+var slider = new Slider('#ex15', {
+	min: 10,
+	max: 1000,
+	scale: 'logarithmic',
+	step: 10
+});
+
+});
 function isBreakpoint( alias ) {
 	return $('.device-' + alias).is(':visible');
 }
@@ -364,23 +383,23 @@ var fullDateString = new Date();
             <div class="panel panel-primary panel-contract ">
                 <div class="panel-heading text-center">
                     <span>
-                        36-month plan
+                         Dedicated ANT Miner s9
                     </span>
                 </div>
                 <div class="panel-body">
                     <form class="tariff-block tariff-custom" action="https://hashing24.com/contract/new" method="POST" contract-type="DEFAULT">
                         <input type="hidden" name="ghs" value="1" class="j-custom-tariff-input" />
-                        <div class="limit-reached-warn-wrapper">
+<!--                        <div class="limit-reached-warn-wrapper">
                             <div class="limit-reached-warn">
                                 <div class="limit-reached-warn-title">SOLD OUT <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
                                 <div class="limit-reached-warn-desc">Unfortunately, hashing power we are selling from data centers of our partners has limited supply. We have stopped sales for a while but will be back soon. Please <a href="register.php">register an account</a> with us if you'd like to stay tuned </div>
                             </div>
-                        </div>
-                        <fieldset disabled class="limit-reached-disabled">
-                            <div class="widget-big-price-wrapper">
-                                <div class="widget-big-price-wrapper-currency j-widget-big-price-wrapper-currency"></div>
+                        </div>-->
+                        <fieldset  >
+<!--                            <div class="widget-big-price-wrapper">
+                                <div class="widget-big-price-wrapper-currency j-widget-big-price-wrapper-currency">$1500</div>
                                 <div class="widget-big-price-wrapper-value j-widget-big-price-wrapper-value"></div>
-                            </div>
+                            </div>-->
                             <div class="clearfix tariff-block-blue-text">
                                 <div class="bc-label">
                                     <ul class="tariff-block-currency-list">
@@ -388,7 +407,26 @@ var fullDateString = new Date();
                                             <input type="radio"  name="currency" id="custom-tariff-currency-BTC-HASH(0x8b1c068)" value="BTC">
                                             <label for="custom-tariff-currency-BTC-HASH(0x8b1c068)">
                                                 BTC
-                                                <span class="j-custom-tariff-price-span" currency="BTC"></span>
+                                                <span class="" currency="BTC"> 
+                                                    <?php
+			$f="https://api.coindesk.com/v1/bpi/currentprice.json";
+
+			$file=file_get_contents($f);
+			
+			if($file==""){
+	print("error:cant get file");
+	return;
+}
+$myjson = json_decode($file);
+
+$var=$myjson->bpi->USD->rate; 
+$str=str_replace(",","","$var");
+ echo $float = (double)$str*1500;
+//echo $float*1500;
+
+?>
+                 <input type="hidden" id="apival" value="<?php echo $str;?>">                               
+   </span>
                                                 <div class="custom-tariff-currency-check"></div>
                                             </label>
                                         </li>
@@ -396,37 +434,37 @@ var fullDateString = new Date();
                                             <input type="radio" checked name="currency" id="custom-tariff-currency-USD-HASH(0x8b1c068)" value="USD">
                                             <label for="custom-tariff-currency-USD-HASH(0x8b1c068)">
                                                 USD
-                                                <span class="j-custom-tariff-price-span" currency="USD"></span>
+                                                <span class="" currency="USD">$1500</span>
                                                 <div class="custom-tariff-currency-check"></div>
                                             </label>
                                         </li>
                                         <li>
-                                            <input type="radio"  name="currency" id="custom-tariff-currency-EUR-HASH(0x8b1c068)" value="EUR">
-                                            <label for="custom-tariff-currency-EUR-HASH(0x8b1c068)">
+                                            <!--<input type="radio"  name="currency" id="custom-tariff-currency-EUR-HASH(0x8b1c068)" value="EUR">-->
+<!--                                            <label for="custom-tariff-currency-EUR-HASH(0x8b1c068)">
                                                 EUR
                                                 <span class="j-custom-tariff-price-span" currency="EUR"></span>
                                                 <div class="custom-tariff-currency-check"></div>
-                                            </label>
+                                            </label>-->
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <p class="f12 text-center light_gray clearfix"><small>one-time payment</small></p>
-                            <div class="bc-input-wrapper bc-input-wrapper-blue widget-ghs-wrapper">
+<!--                            <div class="bc-input-wrapper bc-input-wrapper-blue widget-ghs-wrapper">
                                 <input name="bc-power" class="bc-input j-custom-tariff-power-new" value="100 GH/s">
                                 <div class="bc-input-steps">
                                     <div class="bc-input-step bc-input-step-up" step="100"></div>
                                     <div class="bc-input-step bc-input-step-down" step="-100"></div>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="tariff-block-label-wapper clearfix">
                                 <div class="bc-label pull-left">Maintenance <span class="j-widget-label-tooltip fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Paid automatically from daily mined BTC volume"></span></div>
-                                <div class="bc-label pull-right">$0.00033 per GH/s per day</div>
+                                <div class="bc-label pull-right">$5 per day</div>
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
-                                <div class="bc-label pull-left">Amount of hosts</div>
-                                <div class="bc-label pull-right"><span class="j-custom-tariff-hosts-amount-span"></span></div>
+                                <div class="bc-label pull-left">Dedicated ANT Miner s9</div>
+                                <!--<div class="bc-label pull-right"><span class="j-custom-tariff-hosts-amount-span"></span></div>-->
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
@@ -436,7 +474,12 @@ var fullDateString = new Date();
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
                                 <div class="bc-label pull-left">Duration</div>
-                                <div class="bc-label pull-right">36 months</div>
+                                <div class="bc-label pull-right">6 months</div>
+                            </div>
+                               <div class="tariff-block-divider"></div>
+                            <div class="tariff-block-label-wapper clearfix">
+                                <div class="bc-label pull-left">Payback Period</div>
+                                <div class="bc-label pull-right">45 days</div>
                             </div>
                             <div class="tariff-block-button-wrapper text-center">
                                 <button type="submit" class="btn btn-lg btn-success">Buy</button>
@@ -456,30 +499,37 @@ var fullDateString = new Date();
                         <a href="#" class="j-new-price-close btn btn-lg btn-warning">Hide</a>
                     </div>
                 </div>
-                <div class="tariff-block-popular-wrapper"><div class="tariff-block-popular">Start 15.01.2018</div></div>
-                <div class="tariff-block-discount-wrapper"><div class="tariff-block-discount"><span>Pre<br>Order</span></div></div>
+<!--                <div class="tariff-block-popular-wrapper"><div class="tariff-block-popular">Start 15.01.2018</div></div>
+                <div class="tariff-block-discount-wrapper"><div class="tariff-block-discount"><span>Pre<br>Order</span></div></div>-->
                 <div class="panel-heading text-center">
                     <span>
-                        36-month plan
-                        <br>Pre-order
+                       Shared Ant Miner s9
+                        <!--<br>Pre-order-->
                     </span>
                 </div>
                 <div class="panel-body">
                     <form class="tariff-block tariff-custom" action="https://hashing24.com/contract/new" method="POST" contract-type="P180115_12">
                         <input type="hidden" name="ghs" value="1" class="j-custom-tariff-input" />
                         <input type="hidden" name="coupon_code" value="P180115_12" />
-                        <div class="limit-reached-warn-wrapper">
+                        
+<!--                        <div class="limit-reached-warn-wrapper">
                             <div class="limit-reached-warn">
                                 <div class="limit-reached-warn-title">SOLD OUT <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
                                 <div class="limit-reached-warn-desc">Unfortunately, hashing power we are selling from data centers of our partners has limited supply. We have stopped sales for a while but will be back soon. Please <a href="register.php">register an account</a> with us if you'd like to stay tuned </div>
                             </div>
-                        </div>
-                        <fieldset disabled class="limit-reached-disabled">
-                            <div class="widget-big-price-wrapper">
+                        </div>-->
+                        <fieldset>
+                            <div class="col-xs-12">
+ <div id="slider-sha" class="uislider m-t m-b" data-step="10" data-start="0" data-min="0" data-max="100000" data-unit="giga" data-type="sha"></div>
+</div>
+                              <div class="widget-big-price-wrapper">
+                              <input id="ex15" type="text" data-slider-min="10" data-slider-max="1000" data-slider-step="5" />
+                            <!--<input id="ex13" type="text" data-slider-ticks="[0, 10, 20, 30, 40,50,60,70,80,90,100,110,120,130,140,150,150]" data-slider-ticks-snap-bounds="10" data-slider-ticks-labels='["$0", "$10", "$20", "$30", "$40"]'/>-->
+<!--                            <div class="widget-big-price-wrapper">
                                 <div class="widget-big-price-wrapper-value-old"><span class="j-widget-big-price-wrapper-value-old"></span></div>
                                 <div class="widget-big-price-wrapper-currency j-widget-big-price-wrapper-currency"></div>
                                 <div class="widget-big-price-wrapper-value j-widget-big-price-wrapper-value"></div>
-                            </div>
+                            --></div>
                             <div class="clearfix tariff-block-blue-text">
                                 <div class="bc-label">
                                     <ul class="tariff-block-currency-list">
@@ -495,47 +545,53 @@ var fullDateString = new Date();
                                             <input type="radio" checked name="currency" id="custom-tariff-currency-USD-HASH(0x7ded3b8)" value="USD">
                                             <label for="custom-tariff-currency-USD-HASH(0x7ded3b8)">
                                                 USD
-                                                <span class="j-custom-tariff-price-span" currency="USD"></span>
+                                                <span class="usdtxt" currency="USD" id="usdtext">$15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1.50 per unit</span>
                                                 <div class="custom-tariff-currency-check"></div>
                                             </label>
                                         </li>
-                                        <li>
+<!--                                        <li>
                                             <input type="radio"  name="currency" id="custom-tariff-currency-EUR-HASH(0x7ded3b8)" value="EUR">
                                             <label for="custom-tariff-currency-EUR-HASH(0x7ded3b8)">
                                                 EUR
                                                 <span class="j-custom-tariff-price-span" currency="EUR"></span>
                                                 <div class="custom-tariff-currency-check"></div>
                                             </label>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
                             <p class="f12 text-center light_gray clearfix"><small>one-time payment</small></p>
-                            <div class="bc-input-wrapper bc-input-wrapper-blue widget-ghs-wrapper">
+<!--                            <div class="bc-input-wrapper bc-input-wrapper-blue widget-ghs-wrapper">
                                 <input name="bc-power" class="bc-input j-custom-tariff-power-new" value="100 GH/s">
                                 <div class="bc-input-steps">
                                     <div class="bc-input-step bc-input-step-up" step="100"></div>
                                     <div class="bc-input-step bc-input-step-down" step="-100"></div>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="tariff-block-label-wapper clearfix">
                                 <div class="bc-label pull-left">Maintenance <span class="j-widget-label-tooltip fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Paid automatically from daily mined BTC volume"></span></div>
-                                <div class="bc-label pull-right">$0.00033 per GH/s per day</div>
+                                <div class="bc-label pull-right" id="maintaince">$0.003 </div>
+                           
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
-                                <div class="bc-label pull-left">Amount of hosts</div>
-                                <div class="bc-label pull-right"><span class="j-custom-tariff-hosts-amount-span"></span></div>
+                                <div class="bc-label pull-left">Shared Ant Miner s9</div>
+                                <!--<div class="bc-label pull-right"><span class="j-custom-tariff-hosts-amount-span"></span></div>-->
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
                                 <div class="bc-label pull-left">Delivery Date <span class="j-widget-label-tooltip fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Delivery date – is a date when mining contract gets activated."></span></div>
-                                <div class="bc-label pull-right">15.01.2018</div>
+                                <div class="bc-label pull-right">Instantly</div>
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
                                 <div class="bc-label pull-left">Duration</div>
-                                <div class="bc-label pull-right">36 months</div>
+                                <div class="bc-label pull-right">6 months</div>
+                            </div>
+                             <div class="tariff-block-divider"></div>
+                            <div class="tariff-block-label-wapper clearfix">
+                                <div class="bc-label pull-left">Payback Time</div>
+                                <div class="bc-label pull-right">45 days</div>
                             </div>
                             <div class="tariff-block-button-wrapper text-center">
                                 <button type="submit" class="btn btn-lg btn-success">Buy</button>
@@ -549,7 +605,71 @@ var fullDateString = new Date();
 </div>
 
 <script>
+$('#ex15').change(function(){
+   var d= $(this).val().trim();
+//   alert(d);
+  var a= parseFloat(d)*parseFloat(1.50); 
+  $('#usdtext').text("$"+a);
 
+   var b=parseFloat(a)*parseFloat($('#apival').val().trim());
+//   alert(b);
+   $('.j-custom-tariff-price-span').text(b.toFixed(2));
+   
+   if(d=="20")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*2;
+   $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="30")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*3;
+   $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="40")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*4;
+  $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="50")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*5;
+   $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="60")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*6;
+   $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="70")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*7;
+   $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="80")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*8;
+ $('#maintaince').text("$"+maintainceval);
+   }
+   if(d=="90")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*9;
+   $('#maintaince').text("$"+maintainceval);
+   }
+    if(d=="100")
+   {
+       
+     var maintainceval=  parseFloat(0.03)*10;
+ $('#maintaince').text("$"+maintainceval);
+   }
+});
 var minHosts = 1,
     convertMultiplier = 1000,
     ghsPerHost = 100;
