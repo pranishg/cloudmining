@@ -312,9 +312,9 @@ var user_balances = new Array();
 $(document).ready(function() {
 
     $.cookie("tm", (0-(new Date()).getTimezoneOffset()), { expires : 365 });
-    var bitcoin=parseFloat(15)*parseFloat($('#apival').val().trim());
+    var bitcoin=parseFloat(1)/parseFloat($('#apival').val().trim())*parseFloat(15);
 //   alert(b);
-   $('.j-custom-tariff-price-span').text(bitcoin.toFixed(2));
+   $('.j-custom-tariff-price-span').text(bitcoin);
 $("#ex15").slider({
 	
         min: 10,
@@ -396,10 +396,10 @@ var fullDateString = new Date();
                             </div>
                         </div>-->
                         <fieldset  >
-<!--                            <div class="widget-big-price-wrapper">
-                                <div class="widget-big-price-wrapper-currency j-widget-big-price-wrapper-currency">$1500</div>
-                                <div class="widget-big-price-wrapper-value j-widget-big-price-wrapper-value"></div>
-                            </div>-->
+                            <div class="widget-big-price-wrapper">
+<!--                                <div class="widget-big-price-wrapper-currency j-widget-big-price-wrapper-currency">$1500</div>
+                                <div class="widget-big-price-wrapper-value j-widget-big-price-wrapper-value"></div>-->
+                            </div>
                             <div class="clearfix tariff-block-blue-text">
                                 <div class="bc-label">
                                     <ul class="tariff-block-currency-list">
@@ -421,7 +421,7 @@ $myjson = json_decode($file);
 
 $var=$myjson->bpi->USD->rate; 
 $str=str_replace(",","","$var");
- echo $float = (double)$str*1500;
+ echo $float = 1/(int)$str*1500;
 //echo $float*1500;
 
 ?>
@@ -463,7 +463,7 @@ $str=str_replace(",","","$var");
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
-                                <div class="bc-label pull-left">Dedicated ANT Miner s9</div>
+                                <div class="bc-label  text-center">Dedicated ANT Miner s9</div>
                                 <!--<div class="bc-label pull-right"><span class="j-custom-tariff-hosts-amount-span"></span></div>-->
                             </div>
                             <div class="tariff-block-divider"></div>
@@ -575,7 +575,7 @@ $str=str_replace(",","","$var");
                             </div>
                             <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
-                                <div class="bc-label pull-left">Shared Ant Miner s9</div>
+                                 <div class="bc-label  text-center">Shared Ant Miner s9</div>
                                 <!--<div class="bc-label pull-right"><span class="j-custom-tariff-hosts-amount-span"></span></div>-->
                             </div>
                             <div class="tariff-block-divider"></div>
@@ -590,7 +590,7 @@ $str=str_replace(",","","$var");
                             </div>
                              <div class="tariff-block-divider"></div>
                             <div class="tariff-block-label-wapper clearfix">
-                                <div class="bc-label pull-left">Payback Time</div>
+                                <div class="bc-label pull-left">Payback Period</div>
                                 <div class="bc-label pull-right">45 days</div>
                             </div>
                             <div class="tariff-block-button-wrapper text-center">
@@ -611,9 +611,9 @@ $('#ex15').change(function(){
   var a= parseFloat(d)*parseFloat(1.50); 
   $('#usdtext').text("$"+a);
 
-   var b=parseFloat(a)*parseFloat($('#apival').val().trim());
+   var b=parseInt(1)/parseFloat($('#apival').val().trim())*parseFloat(a);
 //   alert(b);
-   $('.j-custom-tariff-price-span').text(b.toFixed(2));
+   $('.j-custom-tariff-price-span').text(b);
   
 //        for(var i=0;i<=1000;i++)
 //        {

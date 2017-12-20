@@ -364,7 +364,7 @@ $myjson = json_decode($file);
 
 $var=$myjson->bpi->USD->rate; 
 $str=str_replace(",","","$var");
- echo $float = (double)$str*1500;
+ echo $float = 1/(int)$str*1500;
 //echo $float*1500;
 $usd=$var;
 ?></div>
@@ -382,7 +382,7 @@ $myjson = json_decode($file);
 
 $var=$myjson->bpi->EUR->rate; 
 $str=str_replace(",","","$var");
- echo $float = (double)$str*1500;
+ echo $float = 1/(int)$str*1500;
 //echo $float*1500;
 
 ?></div>
@@ -467,15 +467,15 @@ $str=str_replace(",","","$var");
                 </tr>
                 <tr>
                     <td>Maintenance</td>
-                    <td><span class="j_maintenance-usd-day"></span> 0.003 USD / <span class="j_maintenance-btc-day"></span><?php echo ($str*0.003);?> BTC</td>
-                    <td><span class="j_maintenance-usd-week"></span> 0.021 USD / <span class="j_maintenance-btc-week"></span> <?php echo ($str*0.021);?>BTC</td>
-                    <td><span class="j_maintenance-usd-month"></span> 0.09 USD / <span class="j_maintenance-btc-month"></span> <?php echo ($str*0.09);?> BTC</td>
+                    <td><span class="j_maintenance-usd-day"></span>  </td>
+                    <td><span class="j_maintenance-usd-week"></span></td>
+                    <td><span class="j_maintenance-usd-month"></span></td>
                 </tr>
                 <tr>
-                    <td>Net Income</td>
-                    <td><b><span class="j_income-day-usd"></span> USD</b> / <span class="j_income-day"></span> BTC</td>
-                    <td><b><span class="j_income-week-usd"></span> USD</b> / <span class="j_income-week"></span> BTC</td>
-                    <td><b><span class="j_income-month-usd"></span> USD</b> / <span class="j_income-month"></span> BTC</td>
+                   <td>Net Income</td>
+                    <td><b><span class="j_income-day-usd"></span> </b> / <span class="j_income-day"></span> 0.00001717 BTC</td>
+                    <td><b><span class="j_income-week-usd"></span></b> / <span class="j_income-week"></span> 0.00012021 BTC</td>
+                    <td><b><span class="j_income-month-usd"></span></b> / <span class="j_income-month"></span> 0.00053236 BTC</td>
                 </tr>
             </table>
         </div>
@@ -547,9 +547,9 @@ $str=str_replace(",","","$var");
                 </tr>
                 <tr>
                     <td>Net Income</td>
-                    <td><b><span class="j_income-day-usd"></span> USD</b> / <span class="j_income-day"></span> BTC</td>
-                    <td><b><span class="j_income-week-usd"></span> USD</b> / <span class="j_income-week"></span> BTC</td>
-                    <td><b><span class="j_income-month-usd"></span> USD</b> / <span class="j_income-month"></span> BTC</td>
+                    <td><b><span class="j_income-day-usd"></span> </b> / <span class="j_income-day"></span> 0.00001717 BTC</td>
+                    <td><b><span class="j_income-week-usd"></span></b> / <span class="j_income-week"></span> 0.00012021 BTC</td>
+                    <td><b><span class="j_income-month-usd"></span></b> / <span class="j_income-month"></span> 0.00053236 BTC</td>
                 </tr>
             </table>
         </div>
@@ -727,8 +727,38 @@ $('#product').change(function(){
 });
 
 $('#butproduct').click(function(){
-    
-   $('#btprd').show(); 
+     
+      $('#btprd').hide(); 
+    if($("#product").val().trim()=="1"){
+        $('.j_maintenance-usd-day,.j_income-day-usd').text('5 USD');
+         $('.j_maintenance-usd-week,.j_income-week-usd').text(parseInt(5)*parseInt(7)+" USD");
+          $('.j_maintenance-usd-month,.j_income-month-usd').text(parseInt(5)*parseInt(30)+" USD");
+//        alert("dfdf");
+      $('#btprd').show();       
+    }
+      if($("#product").val().trim()=="0"){
+          if($('#productval').val().trim()!="" && $('#productval').val().trim()!="10")
+          {    
+//              alert("dfdf");
+          var d=$('#productval').val().trim();
+//          alert(d)
+          var strlen=d.substring(0,d.length - 1); 
+//           alert(strlen);
+                var value=parseFloat(strlen)*parseFloat(0.003).toFixed(3);
+//                alert(value);
+         $('.j_maintenance-usd-day,.j_income-day-usd').text(value+" USD");
+         $('.j_maintenance-usd-week, .j_income-week-usd').text(parseFloat(value)*parseFloat(7).toFixed(3)+" USD");
+         $('.j_maintenance-usd-month,.j_income-month-usd').text(parseFloat(value)*parseFloat(30).toFixed(3)+" USD");  
+//         alert(parseFloat(value)*parseFloat(30).toFixed(3));
+          $('#btprd').show();  
+      }
+      else{
+         $('.j_maintenance-usd-day, .j_income-day-usd').text('0.003 USD');
+         $('.j_maintenance-usd-week, .j_income-week-usd').text(parseFloat(0.003)*parseFloat(7).toFixed(3)+" USD");
+         $('.j_maintenance-usd-month, .j_income-month-usd').text(parseFloat(0.003)*parseFloat(30).toFixed(3)+" USD");  
+          $('#btprd').show();  
+      }
+    }
 });
 </script>
 
