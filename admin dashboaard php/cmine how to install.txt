@@ -1,0 +1,21 @@
+-Upload all the zip folder on your server (public_html)
+
+-Create a database, and go to phpmyadmin for imported database (cmine-db.sql)
+
+-And the data needs to be changed in the files: bd.php , bdl.php, abdl.php ../admin/dbadm.php,cryptobox.config.php
+
+mysql_connect (“localhost”,”dbuser,”dbpass”); mysql_select_db (“dbname”);
+
+-Expose all rights for the user Make changes to files: user.php, verification.php, forgot.php, supp.php 
+
+-Gourl.io : You need to go to your GoUrl account except Private and Public key, you need to go to “Your Affiliate Program” “and create an Affiliate key” which also needs to be registered in the admin panel. And in the account GoUrl register your address Bitcoin where funds will flow.
+
+-Block.io : go to Block.io create an account. We come up with any mail and password. Confirmation on the mail will not come so you can come up with absolutely any e-mail. Then we come up with a PIN code. In its Account write out the identifiers from the currency and register them in the admin panel. In the admin panel, we also enter the PIN code and the main address of the wallet. Create 5 wallets at once. In Block.io creating 100 wallets for each currency for free and then you need to pay (tariff plans) or on my system just connect a lot of wallets to make it free. In the admin panel is calculated for 5 wallets,  select on which purse addresses should be created (1..2..3..4..5) If there are already 100 addresses in the first purse in the admin panel write 2 and so on. That is, people who have created a deposit on their first wallet will be able to continue to deposit money there and create new ones for the second purse. You also need to monitor the output of Block.io and in the admin panel you need to Prescribe a minimum commission.
+
+-Exchange Rates :The file initrate.php pills exchange rates and it must be put in the Cron job for execution once per hour
+
+-Captcha : Concerning captcha, try in your Google account to enter the site names different from CMine because I already created this name for test hosting,In the file verification.php enter your secret key from google captcha and on the page of main.html enter the public key from google captcha
+
+----------------
+
+for more information please contact me

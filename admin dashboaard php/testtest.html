@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Powerange - iOS 7 style range slider</title>
+      <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Material Dashboard CSS    -->
+    <link href="../assets/css/material-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../dist/powerange.css" />
+</head>
+<body>
+
+<div class="container">
+
+
+    <section class="content">
+      <div class="box">
+
+
+        <div class="example">
+
+
+          <div class="slider-wrapper">
+            <input type="text" class="js-callback" />
+            <div align="center"><label class="display-box-label">Value:</label> </div>
+            <div align="center" id="js-display-callback" class="display-box"></div>
+          </div>
+        </div>
+      </div>
+        </section>
+        </div>
+          <script src="../dist/powerange.min.js"></script>
+  <script type="text/javascript">
+
+
+    // Callback.
+    var clbk = document.querySelector('.js-callback');
+    var initClbk = new Powerange(clbk, { callback: displayValue, start: 10 });
+
+    function displayValue() {
+      document.getElementById('js-display-callback').innerHTML = clbk.value;
+    }
+  </script>
+</body>
+</html>

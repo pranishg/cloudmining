@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CMINE - Cloud Mining</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.css">
+
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+      <!-- This is what you need -->
+  <script src="https://cdn.jsdelivr.net/es6-promise/latest/es6-promise.auto.min.js"></script> <!-- IE11 support -->
+  <script src="./dist/sweetalert2.js"></script>
+  <link rel="stylesheet" href="./dist/sweetalert2.min.css">
+  <!--.......................-->
+
+<script>
+function Ftest (obj)
+{
+if (this.ST) return; var ov = obj.value;
+var ovrl = ov.replace (/\d*\.?\d*/, '').length; this.ST = true;
+if (ovrl > 0) {obj.value = obj.lang; Fshowerror (obj); return}
+obj.lang = obj.value; this.ST = null;
+}
+
+function Fshowerror (obj)
+{
+if (!this.OBJ)
+   {this.OBJ = obj; obj.style.backgroundColor = 'pink'; this.TIM = setTimeout (Fshowerror, 50)}
+else
+   {this.OBJ.style.backgroundColor = ''; clearTimeout (this.TIM); this.ST = null; Ftest (this.OBJ); this.OBJ = null}
+}
+</script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body id="page-top">
+<div align="center">
+<br>
+<h1>ADMIN - PANEL</h1>   <br>
+     <form action="lgadm.php" name="frmLogina" method="post">
+                                      <div class="col-md-3" Style="width: 100%;">
+												<div class="form-group label-floating">
+													<input type="text" class="form-control" id="logina" name="logina" required placeholder="LOGIN" >
+												</div>
+	                                        </div>      <br>
+	                                        <div class="col-md-4" Style="width: 100%;">
+												<div class="form-group label-floating">
+													<input type="password" class="form-control" id="passworda" name="passworda" required placeholder="PASSWORD" >
+												</div>
+	                                        </div>   <br>
+                                            <div align="center">
+                                            <input type="submit" class="btn btn-outline btn-xl page-scroll" name="submit" value="LOGIN" title="LOGIN" />
+                                            </div>
+                                    </form>
+</div>
+</body>
+
+</html>

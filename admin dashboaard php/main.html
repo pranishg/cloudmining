@@ -1,0 +1,862 @@
+<?Php
+if (isset($_COOKIE['CML'])){
+ $MyLang = $_COOKIE['CML'];
+ if ($MyLang == "ch") {
+ include_once("languages/ch.php");
+ }
+  if ($MyLang == "en") {
+ include_once("languages/en.php");
+ }
+  if ($MyLang == "es") {
+ include_once("languages/es.php");
+ }
+  if ($MyLang == "ru") {
+ include_once("languages/ru.php");
+ }
+  if ($MyLang == "it") {
+ include_once("languages/it.php");
+ }
+  if ($MyLang == "de") {
+ include_once("languages/de.php");
+ }
+ }
+ else {
+ $MyLang = "en";
+ include_once("languages/en.php");
+ }
+include_once("initprftbl.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CMINE - Cloud Mining</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.css">
+
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+      <!-- This is what you need -->
+  <script src="https://cdn.jsdelivr.net/es6-promise/latest/es6-promise.auto.min.js"></script> <!-- IE11 support -->
+  <script src="./dist/sweetalert2.js"></script>
+  <link rel="stylesheet" href="./dist/sweetalert2.min.css">
+  <!--.......................-->
+
+<script>
+function Ftest (obj)
+{
+if (this.ST) return; var ov = obj.value;
+var ovrl = ov.replace (/\d*\.?\d*/, '').length; this.ST = true;
+if (ovrl > 0) {obj.value = obj.lang; Fshowerror (obj); return}
+obj.lang = obj.value; this.ST = null;
+}
+
+function Fshowerror (obj)
+{
+if (!this.OBJ)
+   {this.OBJ = obj; obj.style.backgroundColor = 'pink'; this.TIM = setTimeout (Fshowerror, 50)}
+else
+   {this.OBJ.style.backgroundColor = ''; clearTimeout (this.TIM); this.ST = null; Ftest (this.OBJ); this.OBJ = null}
+}
+</script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body id="page-top">
+<div id="start">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> <?Php echo $LMenu; ?> <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CMINE</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                     <h4 class="page-scroll" Style="color: #B2D9FF;"><b><?Php echo "1 BTC </b>= ".number_format($usdinbtc,2,'.','')." USD"; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#start"><?Php echo $MHStrt; ?></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features"><?Php echo $Bnfst; ?></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact"><?Php echo $Rentblt; ?></a>
+                    </li>
+                     <li>
+                     <a data-toggle="modal" href="main.html#myModal25" class="page-scroll"><?Php echo $LSupp; ?></a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" href="main.html#myModal2" class="page-scroll"><img src="<?Php echo $imgFlag; ?>" alt="" />▼</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    </div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1><?Php echo $MHeadC1; ?></h1>
+                        <div class="registration">
+		                <a data-toggle="modal" href="main.html#myModal1" class="btn btn-outline btn-xl page-scroll">
+		                    <?Php echo $BtnReg; ?>
+		                </a>
+		            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                 	          <!-- Modal2 -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal2" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content" Style="background: url(assets/img/faces/tbl1.png);">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title" Style=" color: #FFFFFF;"><?Php echo $LCLan; ?></h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <a href="languages/enf.php" Style="color: #FFFFFF;"><img src="images/United-Kingdom.png" alt="" /> English &nbsp;</a>
+                                  <a href="languages/esf.php" Style="color: #FFFFFF;"><img src="images/Spain.png" alt="" /> Español &nbsp;</a>
+                                  <a href="languages/chf.php" Style="color: #FFFFFF;"><img src="images/China.png" alt="" /> 中国 &nbsp;</a>
+                                  <a href="languages/def.php" Style="color: #FFFFFF;"><img src="images/Germany.png" alt="" /> Deutsch &nbsp;</a>
+                                  <a href="languages/ruf.php" Style="color: #FFFFFF;"><img src="images/Russia.png" alt="" />  Русский &nbsp;</a>
+                                  <a href="languages/itf.php" Style="color: #FFFFFF;"><img src="images/Italy.png" alt="" /> Italiano </a>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal2 -->
+        
+                  	          <!-- Modal -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content" Style="background: url(assets/img/faces/tbl1.png);">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title" Style=" color: #FFFFFF;"><?Php echo $LPass; ?> ?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p Style=" color: #FFFFFF;"><?Php echo $LPass1; ?>.</p>
+                                      <form method="POST" action="forgot.php">
+      <input type="text" size="20" name="login"  placeholder="login" autocomplete="off" class="form-control placeholder-no-fix" required > <br>
+      <input type="text" size="20" name="email" placeholder="e-mail" autocomplete="off" class="form-control placeholder-no-fix" required >  <br>
+      <button data-dismiss="modal" class="btn btn-default" type="button"><?Php echo $LCanc; ?></button>
+      <input type="submit" value="<?Php echo $LPass2; ?>" name="submit" class="btn btn-theme" style="cursor: pointer;" title="<?Php echo $LPass2; ?>" >
+     <br>
+      </form>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal -->
+
+                                             	          <!-- Modal25 -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal25" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content" Style="background: url(assets/img/faces/tbl1.png);">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title" Style=" color: #FFFFFF;">?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                       <h3><?Php echo $SupZag; ?></h3>
+                               <form name="Comments" method="post" action="supp.php" id="Form1">
+                               <input name="mmail" type="email" id="mmail" class="form-control" placeholder = "<?Php echo $LtMail; ?>" required><br>
+                               <textarea name="TextArea1" id="TextArea1" style="color: rgb(0, 0, 0); 1px solid rgb(192, 192, 192); width: 100%; height: 206px; font-family: Arial; font-size: 13px; " rows="5" cols="27"></textarea><br>
+                               <input id="Button2" name="" value="<?Php echo $ClrSup; ?>" class="btn btn-primary" type="reset">
+                               <input type="submit" id="Button1" name="ButtonSend" value="<?Php echo $SupSnd; ?>" class="btn btn-primary">
+                               </form>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal25 -->
+
+                      <!-- Modal1 -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal1" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content" Style="background: url(assets/img/faces/tbl1.png);">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title" Style=" color: #FFFFFF;"><?Php echo $BtnReg; ?> </h4>
+		                      </div>
+		                      <div class="modal-body">
+                        <form action="verification.php" name="form" method="POST">
+                        <input type="text"  name="login" placeholder ="<?Php echo $LtLog; ?> *" class="form-control placeholder-no-fix" required ><br>
+                        <input type="password"  maxlength="20" name="password"  placeholder="<?Php echo $LtPass; ?> *" class="form-control placeholder-no-fix" required><br>
+                        <input type="password"  maxlength="20" name="password2" placeholder="<?Php echo $LtCPass; ?> *" class="form-control placeholder-no-fix" required><br>
+                        <input type="text" name="email" placeholder="<?Php echo $LtMail; ?> *" autocomplete="off" class="form-control placeholder-no-fix" required> <br>
+                        <div class="g-recaptcha" data-sitekey="6LdE-DgUAAAAACJni-STxZIUN1pPY8ji7sRbRef2"></div><br>
+                                  <button data-dismiss="modal" class="btn btn-default" type="button"><?Php echo $LCanc; ?></button>
+		                          <button class="btn btn-theme" type="submit" name="submit"><?Php echo $LBtnConf; ?></button>
+                                  </form>
+                                  </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal1 -->
+
+
+                                                	          <!-- Modal70 -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal70" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content" Style="background: url(assets/img/faces/tbl1.png);">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h3 class="modal-title" Style=" color: #FFFFFF;"><?Php echo $Rentblt; ?></h3>
+		                      </div>
+		                      <div class="modal-body">
+                               <form class="frmSHA" name="frmSHA" id= "frmSHA" method="post" action="">
+         <input type="text" id="hdndoge" name="hdndoge" value="<?Php echo $Prdgsvn; ?>" hidden="hidden" />
+         <input type="text" id="hdnbit" name="hdnbit" value="<?Php echo $hashsvn; ?>" hidden="hidden" />
+         <input type="text" id="shacostusd" name="shacostusd" value="<?Php echo $SUSD1 = number_format(($usdinbtc * $hashsvn),2,'.',''); ?>" hidden="hidden" />
+         </form>
+         <form class="frmMHS" name="frmMHS" id= "frmMHS" method="post" action="">
+               <input type="text" id="mhsdoge" name="mhsdoge" value="<?Php echo $PrDgFivef; ?>" hidden="hidden" />
+                <input type="text" id="mhscost" name="mhscost" value="<?Php echo $PriceBitA; ?>" hidden="hidden" />
+                <input type="text" id="mhscostusd" name="mhscostusd" value="<?Php echo $MUSD1 = number_format(($usdinbtc * $PriceBitA),2,'.',''); ?>" hidden="hidden" />
+                </form>
+                                         <div class="content">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="card">
+	                            <div class="card-header" data-background-color="blue">
+	                              <h4 class="title"><?Php echo $CalcDoh." GH/s"; ?></h4>
+	                                <p class="category" Style="color: #FFFFFF; font-size: medium;"><?Php echo $CalcEntr; ?></p>
+	                            </div>
+                                 <form class="frmPriceS" name="frmPriceS" id= "frmPriceS" method="post" action="">
+                                            <div align="center"><input type="text" class="form-control" id="txtcalcour" name="txtcalcour" value="" oninput="GetPriceSHA(); Ftest (this)"
+       onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)" value="1" Style=" font-size: x-large; text-align: center;" placeholder="<?Php echo $Entrpwr." GH/s"; ?> "/> </div>
+	                            <div class="card-content table-responsive">
+	                                <table class="table">
+	                                    <thead class="text-primary">
+                                             <th></th>
+	                                    	<th><?Php echo $PerDay; ?></th>
+	                                    	<th><?Php echo $PerMonth; ?></th>
+	                                    	<th><?Php echo $PerYear; ?></th>
+											<th><?Php echo $PerTwoYears; ?></th>
+	                                    </thead>
+	                                    <tbody>
+	                                          <tr><td>Bitcoin</td>
+	                                        	<td><div  id="ShadayB">0.00000000</div></td>
+	                                        	<td><div  id="ShamonthB">0.00000000</div></td>
+	                                        	<td><div  id="ShayearB">0.00000000</div></td>
+												<td><div  id="ShatwoB">0.00000000</div></td>
+	                                        </tr>
+	                                        <tr><td>Usd</td>
+	                                        	<td><div  id="ShadayU">0.00</div></td>
+	                                        	<td><div  id="ShamonthU">0.00</div></td>
+	                                        	<td><div  id="ShayearU">0.00</div></td>
+												<td><div  id="ShatwoU">0.00</div></td>
+	                                        </tr>
+	                                    </tbody>
+	                                </table>
+
+	                            </div>
+                                </form>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+                   <div class="content">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="card">
+	                            <div class="card-header" data-background-color="blue">
+	                              <h4 class="title"><?Php echo $CalcDoh." MH/s"; ?></h4>
+	                                <p class="category" Style="color: #FFFFFF; font-size: medium;"><?Php echo $CalcEntr; ?></p>
+	                            </div>
+                                <form class="frmPriceM" name="frmPriceM" id= "frmPriceM" method="post" action="">
+                                            <div align="center"><input type="text" class="form-control" id="txtcalcourm" name="txtcalcourm" value="" oninput="GetPriceMHS(); Ftest (this)"
+       onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)" value="1" Style=" font-size: x-large; text-align: center;" placeholder="<?Php echo $Entrpwr." MH/s"; ?> "/> </div>
+	                            <div class="card-content table-responsive">
+	                                <table class="table">
+	                                    <thead class="text-primary">
+                                             <th></th>
+	                                    	<th><?Php echo $PerDay; ?></th>
+	                                    	<th><?Php echo $PerMonth; ?></th>
+	                                    	<th><?Php echo $PerYear; ?></th>
+											<th><?Php echo $PerTwoYears; ?></th>
+	                                    </thead>
+	                                    <tbody>
+	                                        <tr><td>Bitcoin</td>
+	                                        	<td><div  id="MhsdayB">0.00000000</div></td>
+	                                        	<td><div  id="MhsmonthB">0.00000000</div></td>
+	                                        	<td><div  id="MhsyearB">0.00000000</div></td>
+												<td><div  id="MhstwoB">0.00000000</div></td>
+	                                        </tr>
+	                                        <tr><td>Dogecoin</td>
+	                                            <td><div  id="MhsdayD">0.00000000</div></td>
+	                                        	<td><div  id="MhsmonthD">0.00000000</div></td>
+	                                        	<td><div  id="MhsyearD">0.00000000</div></td>
+												<td><div  id="MhstwoD">0.00000000</div></td>
+	                                        </tr>
+	                                        <tr><td>Usd</td>
+	                                            <td><div  id="MhsdayU">0.00</div></td>
+	                                        	<td><div  id="MhsmonthU">0.00</div></td>
+	                                        	<td><div  id="MhsyearU">0.00</div></td>
+												<td><div  id="MhstwoU">0.00</div></td>
+	                                        </tr>
+	                                    </tbody>
+	                                </table>
+
+	                            </div>
+                                </form>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+                              </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal70 -->
+
+                                     	          <!-- Modal300 -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal300" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content" Style="background: url(assets/img/faces/tbl1.png);">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title" Style=" color: #FFFFFF;">CMINE</h4>
+		                      </div>
+		                      <div class="modal-body">
+                                <iframe src="PPolicy.php" width="100%" height="450" frameborder="1"></iframe>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal300 -->
+
+                                <div class="screen">
+                                     <div align="center">
+                                	<label class="control-label"><?Php echo $LAuth; ?></label><br>
+                                     </div>
+                                     <form action="login.php" name="frmLogin" method="post">
+                                      <div class="col-md-3" Style="width: 100%;">
+												<div class="form-group label-floating">
+													<input type="text" class="form-control" id="login" name="login" required placeholder="<?Php echo $LtLog; ?>" >
+												</div>
+	                                        </div>      <br>
+	                                        <div class="col-md-4" Style="width: 100%;">
+												<div class="form-group label-floating">
+													<input type="password" class="form-control" id="password" name="password" required placeholder="<?Php echo $LtPass; ?>" >
+												</div>
+	                                        </div>   <br>
+                                            <div align="center">
+                                            <input type="submit" class="btn btn-outline btn-xl page-scroll" name="submit" value="<?Php echo $LtLog; ?>" title="<?Php echo $LtLog; ?>" />
+                                            </div>
+                                    </form>
+                                    <br>
+                                     <div align="left" >
+                                      <ul><a data-toggle="modal" href="main.html#myModal1" Style=" color: #CCCCCC;"><?Php echo $BtnReg; ?></a></ul>
+                                     </div>
+                                     <div align="left" >
+                                      <ul><a data-toggle="modal" href="main.html#myModal" Style=" color: #CCCCCC;"><?Php echo $LPass; ?>?</a></ul>
+                                     </div>
+                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <div align="center"><img src="img/demo-screen-3.gif" class="img-responsive" alt=""></div>
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section  class="download bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading"><?Php echo $MHeadC2; ?></h2>
+                    <p><?Php echo $MpHead1; ?></p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/mnic1.png" alt=""></a>
+                        <a class="badge-link" href="#"><img src="img/mnic2.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2><?Php echo $ZagBnf; ?></h2>
+                        <p class="text-muted"><?Php echo $ZagBnf1; ?></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div>
+                            <div class="device">
+                                <div class="screen">
+
+
+
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.png" class="img-responsive" alt=""> </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-energy text-primary"></i>
+                                    <h3><?Php echo $Mnniz; ?></h3>
+                                    <p class="text-muted"><?Php echo $Pls1; ?></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-clock text-primary"></i>
+                                    <h3><?Php echo $Qpbk; ?></h3>
+                                    <p class="text-muted"><?Php echo $Qpbk1; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-screen-smartphone text-primary"></i>
+                                    <h3><?Php echo $Umdv; ?></h3>
+                                    <p class="text-muted"><?Php echo $MAllHM; ?></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-support text-primary"></i>
+                                    <h3><?Php echo $LSupp; ?></h3>
+                                    <p class="text-muted"><?Php echo $Sprtreq; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="contact" class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2><?Php echo $StblP; ?><br><?Php echo $Stblp1; ?></h2>
+                <a data-toggle="modal" href="#myModal70" class="btn btn-outline btn-xl page-scroll"><?Php echo $Calc123; ?></a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary">
+        <div class="container">
+            <h2><?Php echo $invtsh; ?></h2>
+            <ul class="list-inline list-social">
+                <li class="social-twitter">
+                <img src="assets/img/blockchain.png"/>
+                </li>
+                <li class="social-facebook">
+                <img src="assets/img/favicon.png"/>
+                </li>
+                <li class="social-google-plus">
+                 <img src="assets/img/yler1.png"/>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+<footer>
+<div class="container">
+<div class="menu">
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<div class="header">
+<u><b>Company</b></u> </div>
+<ul class="list-unstyled">
+<li>
+<li data-toggle="modal" data-target="#about">About Us</li>
+
+
+<div id="about" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">About Us</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">Text Here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank">Blog</a>
+</li>
+<li>
+
+
+
+
+
+
+
+<li data-toggle="modal" data-target="#terms">Terms</li>
+
+
+<div id="terms" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">Terms</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">Text Here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+</li>
+<li>
+<li data-toggle="modal" data-target="#privacy">Privacy</li>
+
+
+<div id="privacy" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">Privacy</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">Text Here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="header">
+<u><b>Help</b></u> </div>
+<ul class="list-unstyled">
+<li>
+<li data-toggle="modal" data-target="#whtb">What is Bitcoin ?</li>
+
+
+<div id="whtb" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">What is Bitcoin</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">Text Here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<li data-toggle="modal" data-target="#wthm">What is Mining ?</li>
+
+
+<div id="wthm" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">What is Mining</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">Text Here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<li data-toggle="modal" data-target="#wtw">How it Works ?</li>
+
+
+<div id="wtw" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="color:black;">How it Works</h4>
+      </div>
+      <div class="modal-body">
+        <p style="color:black;">Text Here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<a href="#" rel="nofollow">HelpDesk</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="header">
+<u><b>Contacts</u></b> </div>
+<ul class="list-unstyled">
+<li>
+<a href="mailto:admin@z-files.site">admin@z-files.site</a>
+</li>
+<li>
++00 001 001 0001
+</li>
+<li>
+Kartin B45 ,UK
+</li>
+<li>
+<a href="#">Google Maps</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="header">
+<b><u>Follow us</u></b> </div>
+<ul class="list-unstyled">
+<li>
+<a href="#" rel="nofollow"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+ Facebook</a>
+</li>
+<li>
+<a href="#" rel="nofollow"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+</li>
+<li>
+<a href="#" rel="nofollow"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google+</a>
+</li><li>
+<a href="#" rel="nofollow"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="copyright">
+<p>&copy; 2017 <a href="/">CMINE</a> All Rights Reserved.</p></div>
+<img src="/img/ssl.png" alt="Comodo">
+
+
+</footer>
+
+
+
+
+
+
+
+
+ <script type="text/javascript">
+ function GetPriceSHA()
+ {
+ var dvsm_countt = document.frmPriceS.txtcalcour.value;
+ var price_bitt = document.frmSHA.hdnbit.value;
+ var price_usdS = document.frmSHA.shacostusd.value;
+ var ourcountBitt = (+dvsm_countt * +price_bitt).toFixed(8);
+ var BourcountUsdS = (+dvsm_countt * +price_usdS).toFixed(2);
+  var permonthBt = (+ourcountBitt / 3.5).toFixed(8);
+  var perrayBt = (+permonthBt / 30).toFixed(8);
+  var peryearBt = (+permonthBt * 12).toFixed(8);
+  var threeyearsBt = (+peryearBt * 2).toFixed(8);
+  var BpermonthDMUSDS = (+BourcountUsdS / 3.5).toFixed(2);
+  var BperrayDMUSDS = (+BpermonthDMUSDS / 30).toFixed(2);
+  var BperyearDMUSDS = (+BpermonthDMUSDS * 12).toFixed(2);
+  var BthreeyearsDMUSDS = (+BperyearDMUSDS * 2).toFixed(2);
+  document.getElementById("ShamonthB").innerHTML = permonthBt;
+  document.getElementById("ShadayB").innerHTML = perrayBt;
+  document.getElementById("ShayearB").innerHTML = peryearBt;
+  document.getElementById("ShatwoB").innerHTML = threeyearsBt;
+  document.getElementById("ShamonthU").innerHTML = BpermonthDMUSDS;
+  document.getElementById("ShadayU").innerHTML = BperrayDMUSDS;
+  document.getElementById("ShayearU").innerHTML = BperyearDMUSDS;
+  document.getElementById("ShatwoU").innerHTML = BthreeyearsDMUSDS;
+ }
+</script>
+ <script type="text/javascript">
+ function GetPriceMHS()
+ {
+ var Bdvsm_counttM = document.frmPriceM.txtcalcourm.value;
+ var Bprice_bittM = document.frmMHS.mhscost.value;
+ var Bprice_dogeM = document.frmMHS.mhsdoge.value;
+ var Bprice_usdM = document.frmMHS.mhscostusd.value;
+ var BourcountBittM = (+Bdvsm_counttM * +Bprice_bittM).toFixed(8);
+ var BourcountDogeM = (+Bdvsm_counttM * +Bprice_dogeM).toFixed(8);
+ var BourcountUsdM = (+Bdvsm_counttM * +Bprice_usdM).toFixed(2);
+  var BpermonthBtM = (+BourcountBittM / 3.3).toFixed(8);
+  var BperrayBtM = (+BpermonthBtM / 30).toFixed(8);
+  var BperyearBtM = (+BpermonthBtM * 12).toFixed(8);
+  var BthreeyearsBtM = (+BperyearBtM * 2).toFixed(8);
+  var BpermonthDM = (+BourcountDogeM / 3.3).toFixed(8);
+  var BperrayDM = (+BpermonthDM / 30).toFixed(8);
+  var BperyearDM = (+BpermonthDM * 12).toFixed(8);
+  var BthreeyearsDM = (+BperyearDM * 2).toFixed(8);
+  var BpermonthDMUSD = (+BourcountUsdM / 3.3).toFixed(2);
+  var BperrayDMUSD = (+BpermonthDMUSD / 30).toFixed(2);
+  var BperyearDMUSD = (+BpermonthDMUSD * 12).toFixed(2);
+  var BthreeyearsDMUSD = (+BperyearDMUSD * 2).toFixed(2);
+  document.getElementById("MhsmonthB").innerHTML = BpermonthBtM;
+  document.getElementById("MhsdayB").innerHTML = BperrayBtM;
+  document.getElementById("MhsyearB").innerHTML = BperyearBtM;
+  document.getElementById("MhstwoB").innerHTML = BthreeyearsBtM;
+  document.getElementById("MhsmonthD").innerHTML = BpermonthDM;
+  document.getElementById("MhsdayD").innerHTML = BperrayDM;
+  document.getElementById("MhsyearD").innerHTML = BperyearDM;
+  document.getElementById("MhstwoD").innerHTML = BthreeyearsDM;
+  document.getElementById("MhsmonthU").innerHTML = BpermonthDMUSD;
+  document.getElementById("MhsdayU").innerHTML = BperrayDMUSD;
+  document.getElementById("MhsyearU").innerHTML = BperyearDMUSD;
+  document.getElementById("MhstwoU").innerHTML = BthreeyearsDMUSD;
+ }
+</script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+</body>
+
+</html>
