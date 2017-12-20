@@ -364,7 +364,7 @@ $myjson = json_decode($file);
 
 $var=$myjson->bpi->USD->rate; 
 $str=str_replace(",","","$var");
- echo $float = 1/(int)$str*1500;
+ echo $float = ((double)1/(double)$str)*1500;
 //echo $float*1500;
 $usd=$var;
 ?></div>
@@ -382,7 +382,7 @@ $myjson = json_decode($file);
 
 $var=$myjson->bpi->EUR->rate; 
 $str=str_replace(",","","$var");
- echo $float = 1/(int)$str*1500;
+ echo $float = ((double)1/(double)$str)*1500;
 //echo $float*1500;
 
 ?></div>

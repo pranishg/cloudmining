@@ -421,7 +421,7 @@ $myjson = json_decode($file);
 
 $var=$myjson->bpi->USD->rate; 
 $str=str_replace(",","","$var");
- echo $float = 1/(int)$str*1500;
+ echo $float = ((double)1/(double)$str)*1500;
 //echo $float*1500;
 
 ?>
@@ -611,9 +611,13 @@ $('#ex15').change(function(){
   var a= parseFloat(d)*parseFloat(1.50); 
   $('#usdtext').text("$"+a);
 
-   var b=parseInt(1)/parseFloat($('#apival').val().trim())*parseFloat(a);
+   var b=(parseFloat(1)/parseFloat($('#apival').val().trim()))*parseFloat(a);
 //   alert(b);
-   $('.j-custom-tariff-price-span').text(b);
+//if(a=='1500')
+//{
+//    b=
+//}
+   $('.j-custom-tariff-price-span').text(b.toFixed(15));
   
 //        for(var i=0;i<=1000;i++)
 //        {
