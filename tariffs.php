@@ -314,7 +314,7 @@ $(document).ready(function() {
     $.cookie("tm", (0-(new Date()).getTimezoneOffset()), { expires : 365 });
     var bitcoin=parseFloat(1)/parseFloat($('#apival').val().trim())*parseFloat(15);
 //   alert(b);
-   $('.j-custom-tariff-price-span').text(bitcoin);
+   $('.j-custom-tariff-price-span').text(bitcoin.toFixed(15));
 $("#ex15").slider({
 	
         min: 10,
