@@ -196,7 +196,7 @@ $('.j-change-lang').click(changeLang);
                 <li class="margin-right-12"><a href="howitworks.php">How it Works</a></li>
                 <li class="margin-right-12"><a href="tariffs.php">Plans</a></li>
 
-                <li class="margin-right-12"><a href="calculator.php">Calculator</a></li>
+                <!--<li class="margin-right-12"><a href="calculator.php">Calculator</a></li>-->
 
 			        <li class="margin-right-12"><div class="margin-top-10"><a href="register.php" class="navbar-btn btn btn-warning btn-sm margin-left-12">Register an Account</a></div></li>
 			        <li class="margin-right-12"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signInModal"><small class="white">Sign In</small></a></li>
