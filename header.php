@@ -1,4 +1,4 @@
-
+<?php ob_start();?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,7 +10,7 @@
         <meta name="yandex-verification" content="6863280f28b10b18" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Start Mining with Maximum Efficiency</title>
+        <title>Cloud Ant | Hosted Ant Miners</title>
         <meta name="keywords" content="
 bitcoin, blockchain, mining, bitfury, bitfury.com, hashing24, hashing24.com, how to mine bitcoin, mine, cloud mining, bitcoin cloud mining, bitcoin farming, bitcoin mining sites, online bitcoin miner, bitcoin mining how it works, best bitcoin mining, " />
         <meta name="description" content="Hashing24 provides turnkey renting solutions from the largest bitcoin mining data centers. 100% uptime guarantee!" />

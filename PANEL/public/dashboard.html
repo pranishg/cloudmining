@@ -131,7 +131,7 @@
                                 <!-- .nav -->
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="dashboard.html">Dashboard</a></li>
-                                    <li><a href="table.html">Tables</a></li>
+<!--                                    <li><a href="table.html">Tables</a></li>
                                     <li class='dropdown '>
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             Form Elements <b class="caret"></b>
@@ -142,7 +142,7 @@
                                             <li><a href="form-wysiwyg.html">WYSIWYG</a></li>
                                             <li><a href="form-wizard.html">Wizard &amp; File Upload</a></li>
                                         </ul>
-                                    </li>
+                                    </li>-->
                                 </ul>
                                 <!-- /.nav -->
                             </div>
@@ -181,18 +181,23 @@
                                 <span class="fa fa-user"></span>
                             </div>
                             <div class="user-wrapper bg-dark">
+                                
+                                
+                                
                                 <a class="user-link" href="">
-                                    <img class="media-object img-thumbnail user-img" alt="User Picture" src="assets/img/user.gif">
-                                    <span class="label label-danger user-label">16</span>
+                                    <img class="media-object img-thumbnail user-img" alt="User Picture" src="assets/img/user.gif" onChange="showPreview(this);">
+                                    <span class="label label-danger user-label"></span>
                                 </a>
+                                
+                                
                         
                                 <div class="media-body">
                                     <h5 class="media-heading">Archie</h5>
                                     <ul class="list-unstyled user-info">
                                         <li><a href="">Administrator</a></li>
-                                        <li>Last Access : <br>
+<!--                                        <li>Last Access : <br>
                                             <small><i class="fa fa-calendar"></i>&nbsp;16 Mar 16:32</small>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
@@ -207,12 +212,12 @@
                                     </a>
                                   </li>
                                   <li class="">
-                                    <a href="javascript:;">
+                                    <a href="" id="mydiv">
                                       <i class="fa fa-building "></i>
-                                      <span class="link-title">Layouts</span>
+                                      <span class="link-title">My Wallet</span>
                                       <span class="fa arrow"></span>
                                     </a>
-                                    <ul class="collapse">
+<!--                                    <ul class="collapse">
                                       <li>
                                         <a href="boxed.html">
                                           <i class="fa fa-angle-right"></i>&nbsp; Boxed Layout </a>
@@ -285,15 +290,15 @@
                                         <a href="sm.html">
                                           <i class="fa fa-angle-right"></i>&nbsp; Mini Sidebar </a>
                                       </li>
-                                    </ul>
+                                    </ul>-->
                                   </li>
                                   <li class="">
                                     <a href="javascript:;">
                                       <i class="fa fa-tasks"></i>
-                                      <span class="link-title">Components</span>
+                                      <span class="link-title">Transaction History</span>
                                       <span class="fa arrow"></span>
                                     </a>
-                                    <ul class="collapse">
+<!--                                    <ul class="collapse">
                                       <li>
                                         <a href="bgcolor.html">
                                           <i class="fa fa-angle-right"></i>&nbsp; Bg Color </a>
@@ -318,17 +323,17 @@
                                         <a href="progress.html">
                                           <i class="fa fa-angle-right"></i>&nbsp; Progress </a>
                                       </li>
-                                    </ul>
+                                    </ul>-->
                                   </li>
                                   <li class="">
                                     <a href="javascript:;">
                                       <i class="fa fa-pencil"></i>
                                       <span class="link-title">
-                                    Forms
+                                    Refereel Status
                         	  </span>
                                       <span class="fa arrow"></span>
                                     </a>
-                                    <ul class="collapse">
+<!--                                    <ul class="collapse">
                                       <li>
                                         <a href="form-general.html">
                                           <i class="fa fa-angle-right"></i>&nbsp; Form General </a>
@@ -345,16 +350,16 @@
                                         <a href="form-wysiwyg.html">
                                           <i class="fa fa-angle-right"></i>&nbsp; Form WYSIWYG </a>
                                       </li>
-                                    </ul>
+                                    </ul>-->
                                   </li>
                                   <li>
-                                    <a href="table.html">
+                                    <a href="#">
                                       <i class="fa fa-table"></i>
-                                      <span class="link-title">Tables</span>
+                                      <span class="link-title">Logout</span>
                                     </a>
                                   </li>
-                                  <li>
-                                    <a href="typography.html">
+                                  <!--<li>-->
+<!--                                    <a href="typography.html">
                                       <i class="fa fa-font"></i>
                                       <span class="link-title">
                                     Typography
@@ -498,7 +503,7 @@
                                       </li>
                                     </ul>
                                   </li>
-                                </ul>
+                                </ul>-->
                         <!-- /#menu -->
                     </div>
                     <!-- /#left -->
@@ -538,7 +543,7 @@
     </ul>
 </div>
 <hr>
-<div class="text-center">
+<!--<div class="text-center">
 
     <a class="quick-btn" href="#">
 	<i class="fa fa-bolt fa-2x"></i>
@@ -580,7 +585,7 @@
 	<span class="label btn-metis-3">1.618</span>
     </a>
 
-</div>
+</div>-->
 <hr>
 <div class="row">
     <div class="col-lg-8">
@@ -645,7 +650,7 @@
     </div>
 </div>
 <hr>
-<div class="row">
+<!--<div class="row">
     <div class="col-lg-12">
 	<div class="box">
 	    <header>
@@ -656,7 +661,7 @@
 	    </div>
 	</div>
     </div>
-</div>
+</div>-->
 
                         </div>
                         <!-- /.inner -->
@@ -786,9 +791,29 @@
             <script src="assets/js/app.js"></script>
 
                 <script>
+                 $(document).ready(function() {
+                     
+                     function showPreview(objFileInput) {
+    if (objFileInput.files[0]) {
+        var fileReader = new FileReader();
+        fileReader.onload = function (e) {
+            $("#targetLayer").html('<img src="'+e.target.result+'" width="200px" height="200px" class="upload-preview" />');
+			$("#targetLayer").css('opacity','0.7');
+			$(".icon-choose-image").css('opacity','0.5');
+        }
+		fileReader.readAsDataURL(objFileInput.files[0]);
+    }
+}
+//    $("#mydiv a").click(function() {
+//        alert(document.URL);
+////       load(document.URL +  ' #content');
+//    });
+});
                     $(function() {
                       Metis.dashboard();
                     });
+                    
+//                    $('#mydiv').click(document.URL +  ' #content');
                 </script>
 
             <script src="assets/js/style-switcher.js"></script>

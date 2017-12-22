@@ -1,4 +1,7 @@
-<?php include_once 'header.php';?>
+<?php include_once 'header.php';
+
+ include_once './sign.php';
+?>
 <!-- Modal -->
 <div class="modal fade modal-open bs-example-modal-sm" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-sm">
